@@ -7,6 +7,7 @@ import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.game.Timer;
 import dev.xdark.clientapi.item.ItemRegistry;
 import dev.xdark.clientapi.js.Compiler;
+import dev.xdark.clientapi.math.MathProvider;
 import dev.xdark.clientapi.nbt.NBTProvider;
 import dev.xdark.clientapi.potion.PotionRegistry;
 import dev.xdark.clientapi.render.FontRenderer;
@@ -77,4 +78,6 @@ public interface ClientApi {
   EntityProvider entityProvider();
 
   ThreadManagement threadManagement();
+
+  MathProvider mathProvider();
 }
