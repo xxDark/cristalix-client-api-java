@@ -1,7 +1,6 @@
 package dev.xdark.clientapi;
 
 import dev.xdark.clientapi.block.BlockRegistry;
-import dev.xdark.clientapi.configuration.ConfigurationProvider;
 import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.game.GameInstance;
 import dev.xdark.clientapi.item.ItemRegistry;
@@ -9,6 +8,7 @@ import dev.xdark.clientapi.js.Compiler;
 import dev.xdark.clientapi.nbt.NBTProvider;
 import dev.xdark.clientapi.potion.PotionRegistry;
 import dev.xdark.clientapi.runtime.System;
+import dev.xdark.clientapi.texture.RenderEngine;
 
 @SidedApi(Side.BOTH)
 public interface ClientApi {
@@ -35,5 +35,6 @@ public interface ClientApi {
   @SidedApi(Side.SERVER)
   BlockRegistry blockRegistry();
 
-  ConfigurationProvider configurationProvider();
+  @SidedApi(Side.SERVER)
+  RenderEngine renderEngine();
 }
