@@ -13,6 +13,7 @@ import dev.xdark.clientapi.potion.PotionRegistry;
 import dev.xdark.clientapi.render.FontRenderer;
 import dev.xdark.clientapi.render.Framebuffer;
 import dev.xdark.clientapi.render.OverlayRenderer;
+import dev.xdark.clientapi.render.RenderItem;
 import dev.xdark.clientapi.render.ScaledResolution;
 import dev.xdark.clientapi.render.Tessellator;
 import dev.xdark.clientapi.resource.ResourceManager;
@@ -80,4 +81,6 @@ public interface ClientApi {
   ThreadManagement threadManagement();
 
   MathProvider mathProvider();
+
+  RenderItem renderItem();
 }
