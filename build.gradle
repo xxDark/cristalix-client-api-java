@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+group 'dev.xdark'
+version '1.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url 'https://libraries.minecraft.net/' }
+}
+
+sourceCompatibility = targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    compileOnly 'org.lwjgl.lwjgl:lwjgl_util_applet:2.9.3'
+    compileOnly 'com.mojang:authlib:1.5.25'
+    compileOnly 'io.netty:netty-buffer:4.1.58.Final'
+}

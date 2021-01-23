@@ -1,0 +1,14 @@
+package dev.xdark.clientapi.block;
+
+import dev.xdark.clientapi.Side;
+import dev.xdark.clientapi.SidedApi;
+
+@SidedApi(Side.SERVER)
+public interface BlockRegistry {
+
+  Block getBlock(int id);
+
+  BlockState getState(int id);
+
+  Block getBlock(String idOrLocation);
+}
