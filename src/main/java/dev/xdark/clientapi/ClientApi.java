@@ -18,6 +18,7 @@ import dev.xdark.clientapi.resource.ResourceManager;
 import dev.xdark.clientapi.runtime.System;
 import dev.xdark.clientapi.skin.SkinManager;
 import dev.xdark.clientapi.texture.RenderEngine;
+import dev.xdark.clientapi.thread.ThreadManagement;
 import dev.xdark.clientapi.world.World;
 
 @SidedApi(Side.BOTH)
@@ -74,4 +75,6 @@ public interface ClientApi {
 
   @SidedApi(Side.SERVER)
   EntityProvider entityProvider();
+
+  ThreadManagement threadManagement();
 }
