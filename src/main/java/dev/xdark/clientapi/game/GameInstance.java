@@ -13,19 +13,14 @@ import dev.xdark.clientapi.world.World;
 @SidedApi(Side.BOTH)
 public interface GameInstance {
 
-  @SidedApi(Side.BOTH)
   ScaledResolution getResolution();
 
-  @SidedApi(Side.BOTH)
   FontRenderer getFontRenderer();
 
-  @SidedApi(Side.BOTH)
   FontRenderer getGalacticFontRenderer();
 
-  @SidedApi(Side.BOTH)
   OverlayRenderer getOverlayRenderer();
 
-  @SidedApi(Side.BOTH)
   ResourceManager getResourceManager();
 
   @SidedApi(Side.SERVER)
@@ -37,6 +32,5 @@ public interface GameInstance {
   @SidedApi(Side.SERVER)
   Timer getTimer();
 
-  @SidedApi(Side.BOTH)
   World getWorld();
 }

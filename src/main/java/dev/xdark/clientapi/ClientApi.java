@@ -1,6 +1,7 @@
 package dev.xdark.clientapi;
 
 import dev.xdark.clientapi.block.BlockRegistry;
+import dev.xdark.clientapi.configuration.ConfigurationProvider;
 import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.game.GameInstance;
 import dev.xdark.clientapi.item.ItemRegistry;
@@ -33,4 +34,6 @@ public interface ClientApi {
 
   @SidedApi(Side.SERVER)
   BlockRegistry blockRegistry();
+
+  ConfigurationProvider configurationProvider();
 }
