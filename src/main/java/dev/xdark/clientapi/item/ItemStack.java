@@ -2,9 +2,11 @@ package dev.xdark.clientapi.item;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.block.BlockState;
 import dev.xdark.clientapi.nbt.NBTBase;
 import dev.xdark.clientapi.nbt.NBTTagCompound;
 import dev.xdark.clientapi.nbt.NBTTagList;
+import dev.xdark.clientapi.text.Text;
 
 @SidedApi(Side.BOTH)
 public interface ItemStack {
@@ -13,9 +15,9 @@ public interface ItemStack {
 
   ItemStack splitStack(int amount);
 
-  //public abstract Item getItem();
+  Item getItem();
 
-  //public abstract float getDestroySpeed(IBlockState blockIn);
+  float getDestroySpeed(BlockState blockState);
 
   int getMaxStackSize();
 
@@ -73,7 +75,7 @@ public interface ItemStack {
 
   int getRepairCost();
 
-  //public abstract ITextComponent getTextComponent();
+  Text getText();
 
   int getCount();
 
