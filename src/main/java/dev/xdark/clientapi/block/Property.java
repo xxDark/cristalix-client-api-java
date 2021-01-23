@@ -14,7 +14,7 @@ public interface Property<T extends Comparable<T>> {
 
   Class<T> getValueClass();
 
-  Optional<T> parseValue(String var1);
+  Optional<T> parseValue(String input);
 
   String getName(T value);
 }
