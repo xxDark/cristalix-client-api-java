@@ -74,5 +74,5 @@ public interface NBTTagCompound extends NBTBase {
 
   boolean hasKey(String key);
 
-  boolean hasKey(String key, int type);
+  boolean hasKeyOfType(String key, int type);
 }
