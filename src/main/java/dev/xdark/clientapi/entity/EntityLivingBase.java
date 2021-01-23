@@ -1,5 +1,7 @@
 package dev.xdark.clientapi.entity;
 
+import static dev.xdark.clientapi.util.SideEffects.objectValue;
+
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.item.ItemStack;
@@ -9,6 +11,12 @@ import java.util.Collection;
 
 @SidedApi(Side.SERVER)
 public interface EntityLivingBase extends Entity {
+
+  DataParameter<Byte> HAND_STATES = objectValue();
+  DataParameter<Float> HEALTH = objectValue();
+  DataParameter<Integer> POTION_EFFECTS = objectValue();
+  DataParameter<Boolean> HIDE_PARTICLES = objectValue();
+  DataParameter<Integer> ARROW_COUNT_IN_ENTITY = objectValue();
 
   float getHealth();
 

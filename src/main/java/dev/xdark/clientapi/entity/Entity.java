@@ -1,5 +1,7 @@
 package dev.xdark.clientapi.entity;
 
+import static dev.xdark.clientapi.util.SideEffects.objectValue;
+
 import com.sun.javafx.geom.Vec3d;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
@@ -13,6 +15,13 @@ import java.util.UUID;
 
 @SidedApi(Side.SERVER)
 public interface Entity {
+
+  DataParameter<Byte> FLAGS = objectValue();
+  DataParameter<Integer> AIR = objectValue();
+  DataParameter<String> CUSTOM_NAME = objectValue();
+  DataParameter<Boolean> CUSTOM_NAME_VISIBLE = objectValue();
+  DataParameter<Boolean> SILENT = objectValue();
+  DataParameter<Boolean> NO_GRAVITY = objectValue();
 
   int getEntityId();
 
