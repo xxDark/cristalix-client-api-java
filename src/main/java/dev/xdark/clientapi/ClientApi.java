@@ -1,6 +1,7 @@
 package dev.xdark.clientapi;
 
 import dev.xdark.clientapi.block.BlockRegistry;
+import dev.xdark.clientapi.discord.DiscordRPC;
 import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.game.Timer;
 import dev.xdark.clientapi.item.ItemRegistry;
@@ -67,4 +68,6 @@ public interface ClientApi {
 
   @SidedApi(Side.SERVER)
   SkinManager skinManager();
+
+  DiscordRPC discordRpc();
 }

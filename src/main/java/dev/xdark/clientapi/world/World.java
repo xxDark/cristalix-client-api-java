@@ -2,6 +2,8 @@ package dev.xdark.clientapi.world;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.entity.Entity;
+import dev.xdark.clientapi.tile.TileEntity;
 
 @SidedApi(Side.BOTH)
 public interface World {
@@ -35,4 +37,13 @@ public interface World {
   double getHorizon();
 
   int getDimension();
+
+  @SidedApi(Side.SERVER)
+  boolean spawnEntity(Entity entity);
+
+  @SidedApi(Side.SERVER)
+  void removeEntity(Entity entity);
+
+  @SidedApi(Side.SERVER)
+  TileEntity getTileEntity(int x, int y, int z);
 }
