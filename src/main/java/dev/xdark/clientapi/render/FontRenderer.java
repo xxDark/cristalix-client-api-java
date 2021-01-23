@@ -15,8 +15,6 @@ public interface FontRenderer {
 
   int getCharWidth(char c);
 
-  String trimStringToWidth(String str, int width);
-
   String trimStringToWidth(String str, int width, boolean reverse);
 
   void drawSplitString(String str, int x, int y, int wrapWidth, int color);
@@ -24,10 +22,6 @@ public interface FontRenderer {
   int getWordWrappedHeight(String str, int maxLength);
 
   boolean getUnicodeFlag();
-
-  String[] listFormattedStringToWidthFast(String str, int wrapWidth, int maxSplit);
-
-  String[] listFormattedStringToWidthFast(String str, int wrapWidth);
 
   List<String> listFormattedStringToWidth(String str, int wrapWidth);
 }

@@ -19,9 +19,9 @@ public interface Thread {
 
   void interrupt();
 
-  void join(long millis);
+  void join(long millis) throws InterruptedException;
 
-  void join();
+  void join() throws InterruptedException;
 
   void start();
 

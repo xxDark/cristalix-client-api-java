@@ -15,5 +15,5 @@ public interface NBTBase {
 
   byte getId();
 
-  NBTBase copy();
+  boolean isEmpty();
 }

@@ -16,8 +16,6 @@ public interface NBTTagList extends NBTBase {
 
   int size();
 
-  boolean isEmpty();
-
   long getLong(int idx);
 
   int getInt(int idx);
@@ -37,7 +35,4 @@ public interface NBTTagList extends NBTBase {
   NBTTagCompound getCompound(int idx);
 
   void clear();
-
-  @Override
-  NBTTagList copy();
 }

@@ -4,6 +4,7 @@ import com.mojang.authlib.GameProfile;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.resource.ResourceLocation;
+import dev.xdark.clientapi.text.Text;
 
 @SidedApi(Side.SERVER)
 public interface NetworkPlayerInfo {
@@ -22,11 +23,11 @@ public interface NetworkPlayerInfo {
 
   ResourceLocation getLocationElytra();
 
-  //ITextComponent getDisplayName();
+  Text getDisplayName();
 
   void setResponseTime(int responseTime);
 
-  //void setDisplayName(ITextComponent displayName);
+  void setDisplayName(Text displayName);
 
   int getLastHealth();
 

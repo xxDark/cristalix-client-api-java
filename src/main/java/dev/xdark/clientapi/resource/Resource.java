@@ -12,5 +12,5 @@ public interface Resource extends Closeable {
 
   InputStream getInputStream();
 
-  ResourcePack getResourcePack();
+  ResourcePack getPack();
 }

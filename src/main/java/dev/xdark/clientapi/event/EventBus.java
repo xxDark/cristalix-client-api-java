@@ -9,9 +9,9 @@ public interface EventBus {
 
   Listener createListener();
 
-  <V> void register(Listener listener, String action, Consumer<V> handler, int priority);
+  <V> RegisteredListener register(Listener listener, String action, Consumer<V> handler, int priority);
 
-  void unregister(Listener listener, String action);
+  void unregister(String action, Consumer<?> handler);
 
   void unregisterAll(Listener listener);
 

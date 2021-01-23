@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'maven-publish'
 
 group 'dev.xdark'
 version '1.0'
@@ -18,4 +19,18 @@ dependencies {
     compileOnly 'org.lwjgl.lwjgl:lwjgl_util_applet:2.9.3'
     compileOnly 'com.mojang:authlib:1.5.25'
     compileOnly 'io.netty:netty-buffer:4.1.58.Final'
+}
+
+publishing {
+    repositories {
+        mavenLocal()
+    }
+    publications {
+        maven(MavenPublication) {
+            groupId project.group
+            artifactId project.name
+            version project.version
+            artifact jar
+        }
+    }
 }

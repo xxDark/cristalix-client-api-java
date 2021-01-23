@@ -17,7 +17,4 @@ public interface NBTPrimitive extends NBTBase {
   double getDouble();
 
   float getFloat();
-
-  @Override
-  NBTPrimitive copy();
 }

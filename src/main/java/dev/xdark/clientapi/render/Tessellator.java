@@ -8,5 +8,5 @@ public interface Tessellator {
 
   void draw();
 
-  BufferBuilder getBuffer();
+  BufferBuilder getBufferBuilder();
 }

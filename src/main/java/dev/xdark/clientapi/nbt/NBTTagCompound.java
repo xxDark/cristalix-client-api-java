@@ -38,31 +38,31 @@ public interface NBTTagCompound extends NBTBase {
 
   byte getId(String key);
 
-  long getLong(String key, long fallback);
+  long getLong(String key);
 
-  double getDouble(String key, double fallback);
+  double getDouble(String key);
 
-  int getInt(String key, int fallback);
+  int getInteger(String key);
 
-  float getFloat(String key, float fallback);
+  float getFloat(String key);
 
-  short getShort(String key, short fallback);
+  short getShort(String key);
 
-  byte getByte(String key, byte fallback);
+  byte getByte(String key);
 
-  boolean getBoolean(String key, boolean fallback);
+  boolean getBoolean(String key);
 
-  String getString(String key, String fallback);
+  String getString(String key);
 
-  long[] getLongArray(String key, long[] fallback);
+  long[] getLongArray(String key);
 
-  int[] getIntArray(String key, int[] fallback);
+  int[] getIntArray(String key);
 
-  byte[] getByteArray(String key, byte[] fallback);
+  byte[] getByteArray(String key);
 
-  NBTTagList getList(String key, NBTTagList fallback);
+  NBTTagList getList(String key);
 
-  NBTTagCompound getCompound(String key, NBTTagCompound fallback);
+  NBTTagCompound getCompound(String key);
 
   <V extends NBTBase> V remove(String key);
 
@@ -72,6 +72,7 @@ public interface NBTTagCompound extends NBTBase {
 
   void clear();
 
-  @Override
-  NBTTagCompound copy();
+  boolean hasKey(String key);
+
+  boolean hasKey(String key, int type);
 }

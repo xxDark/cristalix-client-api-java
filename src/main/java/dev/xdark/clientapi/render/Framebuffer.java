@@ -28,7 +28,7 @@ public interface Framebuffer {
 
   void framebufferRender(int width, int height);
 
-  void framebufferRenderExt(int width, int height, boolean p_178038_3_);
+  void framebufferRenderExt(int width, int height, boolean material);
 
   void framebufferClear();
 }

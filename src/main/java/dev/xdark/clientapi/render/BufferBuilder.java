@@ -2,7 +2,6 @@ package dev.xdark.clientapi.render;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import javafx.scene.shape.VertexFormat;
 
 @SidedApi(Side.SERVER)
 public interface BufferBuilder {

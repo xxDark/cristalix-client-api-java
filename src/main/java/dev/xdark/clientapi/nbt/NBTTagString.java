@@ -7,7 +7,4 @@ import dev.xdark.clientapi.SidedApi;
 public interface NBTTagString extends NBTBase {
 
   String getValue();
-
-  @Override
-  NBTTagString copy();
 }
