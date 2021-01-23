@@ -4,6 +4,9 @@ import com.sun.javafx.geom.Vec3d;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.item.ItemStack;
+import dev.xdark.clientapi.math.AxisAlignedBB;
+import dev.xdark.clientapi.text.HoverEvent;
+import dev.xdark.clientapi.text.Text;
 import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
@@ -17,7 +20,7 @@ public interface Entity {
 
   UUID getUniqueID();
 
-  //ITextComponent getDisplayName();
+  Text getDisplayName();
 
   String getDisplayNameForRendering();
 
@@ -91,7 +94,7 @@ public interface Entity {
 
   void setSize(float width, float height);
 
-  //EntityDataManager getDataManager();
+  EntityDataManager getDataManager();
 
   void turn(float yaw, float pitch);
 
@@ -199,7 +202,7 @@ public interface Entity {
 
   //EnumFacing getAdjustedHorizontalFacing();
 
-  //HoverEvent getHoverEvent();
+  HoverEvent getHoverEvent();
 
   boolean isImmuneToExplosions();
 
@@ -217,11 +220,11 @@ public interface Entity {
 
   Entity getRidingEntity();
 
-  //AxisAlignedBB getEntityBoundingBox();
+  AxisAlignedBB getEntityBoundingBox();
 
-  //AxisAlignedBB getRenderBoundingBox();
+  AxisAlignedBB getRenderBoundingBox();
 
-  //void setEntityBoundingBox(AxisAlignedBB aabb);
+  void setEntityBoundingBox(AxisAlignedBB aabb);
 
   void setUniqueId(UUID uniqueId);
 

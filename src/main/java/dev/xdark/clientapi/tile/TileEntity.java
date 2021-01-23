@@ -4,6 +4,7 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.block.Block;
 import dev.xdark.clientapi.nbt.NBTTagCompound;
+import dev.xdark.clientapi.text.Text;
 import dev.xdark.clientapi.world.World;
 
 @SidedApi(Side.SERVER)
@@ -37,5 +38,5 @@ public interface TileEntity {
 
   void updateContainingBlockInfo();
 
-  //ITextComponent getDisplayName();
+  Text getDisplayName();
 }
