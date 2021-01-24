@@ -1,6 +1,7 @@
 package dev.xdark.clientapi;
 
 import dev.xdark.clientapi.block.BlockRegistry;
+import dev.xdark.clientapi.chat.Chat;
 import dev.xdark.clientapi.discord.DiscordRPC;
 import dev.xdark.clientapi.entity.EntityProvider;
 import dev.xdark.clientapi.event.EventBus;
@@ -31,26 +32,26 @@ public interface ClientApi {
   @SidedApi(Side.SERVER)
   Compiler jsCompiler();
 
-  ScaledResolution getResolution();
+  ScaledResolution resolution();
 
-  FontRenderer getFontRenderer();
+  FontRenderer fontRenderer();
 
-  FontRenderer getGalacticFontRenderer();
+  FontRenderer galacticFontRenderer();
 
-  OverlayRenderer getOverlayRenderer();
+  OverlayRenderer overlayRenderer();
 
-  ResourceManager getResourceManager();
-
-  @SidedApi(Side.SERVER)
-  Tessellator getTessellator();
+  ResourceManager resourceManager();
 
   @SidedApi(Side.SERVER)
-  Framebuffer getFramebuffer();
+  Tessellator tessellator();
 
   @SidedApi(Side.SERVER)
-  Timer getTimer();
+  Framebuffer framebuffer();
 
-  World getWorld();
+  @SidedApi(Side.SERVER)
+  Timer timer();
+
+  World world();
 
   EventBus eventBus();
 
@@ -83,4 +84,6 @@ public interface ClientApi {
   MathProvider mathProvider();
 
   RenderItem renderItem();
+
+  Chat chat();
 }
