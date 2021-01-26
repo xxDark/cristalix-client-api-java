@@ -1,5 +1,7 @@
 package dev.xdark.clientapi.text;
 
+import static dev.xdark.clientapi.util.SideEffects.objectValue;
+
 import java.util.Objects;
 
 public final class ClickEvent {
@@ -41,12 +43,12 @@ public final class ClickEvent {
     return result;
   }
 
-  public enum Action {
+  public interface Action {
 
-    OPEN_URL,
-    OPEN_FILE,
-    RUN_COMMAND,
-    SUGGEST_COMMAND,
-    CHANGE_PAGE,
+    Action OPEN_URL = objectValue(),
+        OPEN_FILE = objectValue(),
+        RUN_COMMAND = objectValue(),
+        SUGGEST_COMMAND = objectValue(),
+        CHANGE_PAGE = objectValue();
   }
 }

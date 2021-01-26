@@ -2,11 +2,7 @@ package dev.xdark.clientapi.text;
 
 public interface Style {
 
-  int BOLD = 1;
-  int ITALIC = 2;
-  int STRIKETHROUGH = 4;
-  int UNDERLINED = 8;
-  int OBFUSCATED = 16;
+  TextFormatting getColor();
 
   boolean isBold();
 
@@ -21,6 +17,8 @@ public interface Style {
   String getInsertion();
 
   boolean isEmpty();
+
+  Style setColor(TextFormatting formatting);
 
   Style setBold(boolean bold);
 

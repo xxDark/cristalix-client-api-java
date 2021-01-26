@@ -8,39 +8,39 @@ import dev.xdark.clientapi.SidedApi;
 @SidedApi(Side.SERVER)
 public interface Material {
 
-  Material AIR = objectValue();
-  Material GRASS = objectValue();
-  Material GROUND = objectValue();
-  Material WOOD = objectValue();
-  Material ROCK = objectValue();
-  Material IRON = objectValue();
-  Material ANVIL = objectValue();
-  Material WATER = objectValue();
-  Material LAVA = objectValue();
-  Material LEAVES = objectValue();
-  Material PLANTS = objectValue();
-  Material VINE = objectValue();
-  Material SPONGE = objectValue();
-  Material CLOTH = objectValue();
-  Material FIRE = objectValue();
-  Material SAND = objectValue();
-  Material CIRCUITS = objectValue();
-  Material CARPET = objectValue();
-  Material GLASS = objectValue();
-  Material REDSTONE_LIGHT = objectValue();
-  Material TNT = objectValue();
-  Material CORAL = objectValue();
-  Material ICE = objectValue();
-  Material PACKED_ICE = objectValue();
-  Material SNOW = objectValue();
-  Material CRAFTED_SNOW = objectValue();
-  Material CACTUS = objectValue();
-  Material CLAY = objectValue();
-  Material GOURD = objectValue();
-  Material DRAGON_EGG = objectValue();
-  Material PORTAL = objectValue();
-  Material CAKE = objectValue();
-  Material WEB = objectValue();
+  Material AIR = objectValue(),
+      GRASS = objectValue(),
+      GROUND = objectValue(),
+      WOOD = objectValue(),
+      ROCK = objectValue(),
+      IRON = objectValue(),
+      ANVIL = objectValue(),
+      WATER = objectValue(),
+      LAVA = objectValue(),
+      LEAVES = objectValue(),
+      PLANTS = objectValue(),
+      VINE = objectValue(),
+      SPONGE = objectValue(),
+      CLOTH = objectValue(),
+      FIRE = objectValue(),
+      SAND = objectValue(),
+      CIRCUITS = objectValue(),
+      CARPET = objectValue(),
+      GLASS = objectValue(),
+      REDSTONE_LIGHT = objectValue(),
+      TNT = objectValue(),
+      CORAL = objectValue(),
+      ICE = objectValue(),
+      PACKED_ICE = objectValue(),
+      SNOW = objectValue(),
+      CRAFTED_SNOW = objectValue(),
+      CACTUS = objectValue(),
+      CLAY = objectValue(),
+      GOURD = objectValue(),
+      DRAGON_EGG = objectValue(),
+      PORTAL = objectValue(),
+      CAKE = objectValue(),
+      WEB = objectValue();
 
   boolean isLiquid();
 

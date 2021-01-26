@@ -20,6 +20,7 @@ import dev.xdark.clientapi.render.Tessellator;
 import dev.xdark.clientapi.resource.ResourceManager;
 import dev.xdark.clientapi.runtime.System;
 import dev.xdark.clientapi.skin.SkinManager;
+import dev.xdark.clientapi.text.TextProvider;
 import dev.xdark.clientapi.texture.RenderEngine;
 import dev.xdark.clientapi.thread.ThreadManagement;
 import dev.xdark.clientapi.world.World;
@@ -86,4 +87,6 @@ public interface ClientApi {
   RenderItem renderItem();
 
   Chat chat();
+
+  TextProvider textProvider();
 }

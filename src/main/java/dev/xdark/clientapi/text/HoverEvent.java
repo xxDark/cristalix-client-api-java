@@ -1,5 +1,7 @@
 package dev.xdark.clientapi.text;
 
+import static dev.xdark.clientapi.util.SideEffects.objectValue;
+
 import java.util.Objects;
 
 public final class HoverEvent {
@@ -33,9 +35,10 @@ public final class HoverEvent {
     return result;
   }
 
-  public enum Action {
-    SHOW_TEXT,
-    SHOW_ITEM,
-    SHOW_ENTITY,
+  public interface Action {
+
+    Action SHOW_TEXT = objectValue(),
+        SHOW_ITEM = objectValue(),
+        SHOW_ENTITY = objectValue();
   }
 }

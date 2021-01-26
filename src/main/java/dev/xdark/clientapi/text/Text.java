@@ -6,6 +6,8 @@ public interface Text extends Iterable<Text> {
 
   Text setStyle(Style style);
 
+  Style getStyle();
+
   Text append(Text text);
 
   String getUnformattedPart();
