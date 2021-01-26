@@ -10,8 +10,4 @@ public interface ScriptMain {
   void load(ClientApi api);
 
   void unload();
-
-  String getName();
-
-  String getVersion();
 }

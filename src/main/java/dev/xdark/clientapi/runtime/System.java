@@ -19,4 +19,8 @@ public interface System {
   static long nanoTime() {
     return java.lang.System.nanoTime();
   }
+
+  static int identityHashCode(Object x) {
+    return java.lang.System.identityHashCode(x);
+  }
 }
