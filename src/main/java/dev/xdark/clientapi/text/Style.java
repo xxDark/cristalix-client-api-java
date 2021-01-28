@@ -2,9 +2,14 @@ package dev.xdark.clientapi.text;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.BOTH)
 public interface Style {
+
+  static Style create() {
+    throw CompileStub.INSTANCE;
+  }
 
   TextFormatting getColor();
 
