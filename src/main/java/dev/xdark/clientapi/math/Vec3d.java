@@ -1,5 +1,9 @@
 package dev.xdark.clientapi.math;
 
+import dev.xdark.clientapi.Side;
+import dev.xdark.clientapi.SidedApi;
+
+@SidedApi(Side.BOTH)
 public interface Vec3d {
 
   double getX();
