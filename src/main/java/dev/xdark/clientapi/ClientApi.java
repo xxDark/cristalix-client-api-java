@@ -6,12 +6,10 @@ import dev.xdark.clientapi.discord.DiscordRPC;
 import dev.xdark.clientapi.entity.EntityProvider;
 import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.game.Minecraft;
-import dev.xdark.clientapi.game.Timer;
 import dev.xdark.clientapi.input.Keyboard;
 import dev.xdark.clientapi.input.Mouse;
 import dev.xdark.clientapi.input.MouseHelper;
 import dev.xdark.clientapi.item.ItemRegistry;
-import dev.xdark.clientapi.js.Compiler;
 import dev.xdark.clientapi.math.MathProvider;
 import dev.xdark.clientapi.nbt.NBTProvider;
 import dev.xdark.clientapi.opengl.GLAllocation;
@@ -28,15 +26,11 @@ import dev.xdark.clientapi.skin.SkinManager;
 import dev.xdark.clientapi.text.TextProvider;
 import dev.xdark.clientapi.texture.RenderEngine;
 import dev.xdark.clientapi.thread.ThreadManagement;
-import dev.xdark.clientapi.world.World;
 
 @SidedApi(Side.BOTH)
 public interface ClientApi {
 
   NBTProvider nbtProvider();
-
-  @SidedApi(Side.SERVER)
-  Compiler jsCompiler();
 
   ScaledResolution resolution();
 
