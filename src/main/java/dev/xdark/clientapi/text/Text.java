@@ -16,6 +16,10 @@ public interface Text extends Iterable<Text> {
     throw CompileStub.INSTANCE;
   }
 
+  static Text of(Object... parameters) {
+    throw CompileStub.INSTANCE;
+  }
+
   Text setStyle(Style style);
 
   Style getStyle();

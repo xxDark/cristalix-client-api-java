@@ -4,15 +4,21 @@ import static dev.xdark.clientapi.util.SideEffects.objectValue;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.BOTH)
 public interface ClickEvent {
+
+  static ClickEvent of(Action action, String value) {
+    throw CompileStub.INSTANCE;
+  }
 
   Action getAction();
 
   String getValue();
 
-  public interface Action {
+  @SidedApi(Side.BOTH)
+  interface Action {
 
     Action OPEN_URL = objectValue(),
         OPEN_FILE = objectValue(),
