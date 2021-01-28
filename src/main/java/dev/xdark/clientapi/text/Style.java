@@ -7,6 +7,20 @@ import dev.xdark.clientapi.util.CompileStub;
 @SidedApi(Side.BOTH)
 public interface Style {
 
+  int BOLD = 1;
+  int ITALIC = 2;
+  int STRIKETHROUGH = 4;
+  int UNDERLINED = 8;
+  int OBFUSCATED = 16;
+
+  static Style of(int caps, Object... parameters) {
+    throw CompileStub.INSTANCE;
+  }
+
+  static Style of(Object... parameters) {
+    throw CompileStub.INSTANCE;
+  }
+
   static Style create() {
     throw CompileStub.INSTANCE;
   }
