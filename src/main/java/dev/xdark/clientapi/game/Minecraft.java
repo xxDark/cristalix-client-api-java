@@ -33,4 +33,6 @@ public interface Minecraft {
 
   @SidedApi(Side.SERVER)
   Entity getRenderViewEntity();
+
+  Session getSession();
 }
