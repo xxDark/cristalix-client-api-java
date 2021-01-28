@@ -2,9 +2,14 @@ package dev.xdark.clientapi.math;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.BOTH)
 public interface Vec3d {
+
+  static Vec3d of(double x, double y, double z) {
+    throw CompileStub.INSTANCE;
+  }
 
   double getX();
 

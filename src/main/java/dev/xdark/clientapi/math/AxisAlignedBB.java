@@ -2,9 +2,14 @@ package dev.xdark.clientapi.math;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.BOTH)
 public interface AxisAlignedBB {
+
+  static AxisAlignedBB of(double minX, double minY, double minZ, double maxX, double maxY, double maxZ) {
+    throw CompileStub.INSTANCE;
+  }
 
   double getMinX();
 

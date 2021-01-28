@@ -2,10 +2,15 @@ package dev.xdark.clientapi.math;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 import dev.xdark.clientapi.util.Rotation;
 
 @SidedApi(Side.BOTH)
 public interface BlockPos extends Vec3i {
+
+  static BlockPos of(int x, int y, int z) {
+    throw CompileStub.INSTANCE;
+  }
 
   BlockPos add(int x, int y, int z);
 

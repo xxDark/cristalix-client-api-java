@@ -2,9 +2,14 @@ package dev.xdark.clientapi.math;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.BOTH)
 public interface Vec3i extends Comparable<Vec3i> {
+
+  static Vec3i of(int x, int y, int z) {
+    throw CompileStub.INSTANCE;
+  }
 
   int getX();
 
