@@ -1,10 +1,16 @@
 package dev.xdark.clientapi.runtime;
 
+import static dev.xdark.clientapi.util.SideEffects.objectValue;
+
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import java.io.PrintStream;
 
 @SidedApi(Side.BOTH)
 public interface System {
+
+  PrintStream out = objectValue();
+  PrintStream err = objectValue();
 
   void exit(int code);
 
