@@ -6,7 +6,6 @@ import dev.xdark.clientapi.discord.DiscordRPC;
 import dev.xdark.clientapi.entity.EntityProvider;
 import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.game.Minecraft;
-import dev.xdark.clientapi.input.Keyboard;
 import dev.xdark.clientapi.input.Mouse;
 import dev.xdark.clientapi.input.MouseHelper;
 import dev.xdark.clientapi.item.ItemRegistry;
@@ -83,8 +82,6 @@ public interface ClientApi {
   Chat chat();
 
   TextProvider textProvider();
-
-  Keyboard keyboard();
 
   Mouse mouse();
 
