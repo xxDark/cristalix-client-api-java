@@ -5,7 +5,11 @@ import dev.xdark.clientapi.chat.Chat;
 import dev.xdark.clientapi.discord.DiscordRPC;
 import dev.xdark.clientapi.entity.EntityProvider;
 import dev.xdark.clientapi.event.EventBus;
+import dev.xdark.clientapi.game.Minecraft;
 import dev.xdark.clientapi.game.Timer;
+import dev.xdark.clientapi.input.Keyboard;
+import dev.xdark.clientapi.input.Mouse;
+import dev.xdark.clientapi.input.MouseHelper;
 import dev.xdark.clientapi.item.ItemRegistry;
 import dev.xdark.clientapi.js.Compiler;
 import dev.xdark.clientapi.math.MathProvider;
@@ -49,11 +53,6 @@ public interface ClientApi {
   @SidedApi(Side.SERVER)
   Framebuffer framebuffer();
 
-  @SidedApi(Side.SERVER)
-  Timer timer();
-
-  World world();
-
   EventBus eventBus();
 
   EventBus messageBus();
@@ -89,4 +88,13 @@ public interface ClientApi {
   Chat chat();
 
   TextProvider textProvider();
+
+  Keyboard keyboard();
+
+  Mouse mouse();
+
+  @SidedApi(Side.SERVER)
+  MouseHelper mouseHelper();
+
+  Minecraft minecraft();
 }

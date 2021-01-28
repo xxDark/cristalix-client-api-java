@@ -11,4 +11,8 @@ public interface TextProvider {
   Text parse(String json);
 
   String toJson(Text text);
+
+  ClickEvent clickEvent(ClickEvent.Action action, String value);
+
+  HoverEvent hoverEvent(HoverEvent.Action action, Text value);
 }

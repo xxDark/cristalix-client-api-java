@@ -17,4 +17,6 @@ public interface Text extends Iterable<Text> {
   String getFormattedText();
 
   List<Text> getParts();
+
+  Text copy();
 }

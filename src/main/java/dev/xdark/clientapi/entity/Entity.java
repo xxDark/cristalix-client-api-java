@@ -2,13 +2,15 @@ package dev.xdark.clientapi.entity;
 
 import static dev.xdark.clientapi.util.SideEffects.objectValue;
 
-import com.sun.javafx.geom.Vec3d;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.item.ItemStack;
 import dev.xdark.clientapi.math.AxisAlignedBB;
+import dev.xdark.clientapi.math.RayTraceResult;
+import dev.xdark.clientapi.math.Vec3d;
 import dev.xdark.clientapi.text.HoverEvent;
 import dev.xdark.clientapi.text.Text;
+import dev.xdark.clientapi.util.EnumFacing;
 import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
@@ -75,15 +77,7 @@ public interface Entity {
 
   boolean isOnGround();
 
-  boolean isTurnLocked();
-
-  void setTurnLocked(boolean turnLocked);
-
   float getEyeHeight();
-
-  Vec3d getLook(float partialTicks);
-
-  Vec3d getPositionEyes(float partialTicks);
 
   void setMotion(double x, double y, double z);
 
@@ -133,7 +127,7 @@ public interface Entity {
 
   Vec3d getVectorForRotation(float yaw, float pitch);
 
-  //RayTraceResult rayTrace(double p_rayTrace_1_, float p_rayTrace_3_);
+  RayTraceResult rayTrace(double distance, float partialTicks);
 
   boolean isEntityAlive();
 
@@ -207,9 +201,9 @@ public interface Entity {
 
   boolean getAlwaysRenderNameTagForRender();
 
-  //EnumFacing getHorizontalFacing();
+  EnumFacing getHorizontalFacing();
 
-  //EnumFacing getAdjustedHorizontalFacing();
+  EnumFacing getAdjustedHorizontalFacing();
 
   HoverEvent getHoverEvent();
 
@@ -236,8 +230,4 @@ public interface Entity {
   void setEntityBoundingBox(AxisAlignedBB aabb);
 
   void setUniqueId(UUID uniqueId);
-
-  void setFakeRiding(boolean riding);
-
-  boolean isFakeRiding();
 }

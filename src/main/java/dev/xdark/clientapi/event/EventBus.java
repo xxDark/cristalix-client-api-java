@@ -16,4 +16,6 @@ public interface EventBus {
   void unregisterAll(Listener listener);
 
   <V> V post(String action, V value);
+
+  boolean anyListeners(String action);
 }

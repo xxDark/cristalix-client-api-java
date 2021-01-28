@@ -11,7 +11,7 @@ public interface Slot {
 
   ItemStack getStack();
 
-  boolean getHasStack();
+  boolean hasStack();
 
   void putStack(ItemStack stack);
 

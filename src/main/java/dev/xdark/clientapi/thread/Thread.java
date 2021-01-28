@@ -30,12 +30,4 @@ public interface Thread {
   void setPriority(int priority);
 
   void setDaemon(boolean daemon);
-
-  static void sleep(long millis) throws InterruptedException {
-    java.lang.Thread.sleep(millis);
-  }
-
-  static void sleep(long millis, int nanos) throws InterruptedException {
-    java.lang.Thread.sleep(millis, nanos);
-  }
 }

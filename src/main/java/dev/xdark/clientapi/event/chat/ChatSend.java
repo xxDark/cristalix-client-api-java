@@ -3,14 +3,16 @@ package dev.xdark.clientapi.event.chat;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.event.Cancellable;
-import dev.xdark.clientapi.text.Text;
 
 @SidedApi(Side.BOTH)
-public interface ChatReceive extends Cancellable {
+public interface ChatSend extends Cancellable {
 
-  String KEY = "chat_receive";
+  String KEY = "chat_send";
 
-  Text getText();
+  String getMessage();
 
-  void setText(Text text);
+  @SidedApi(Side.SERVER)
+  void setMessage(String message);
+
+  boolean isCommand();
 }

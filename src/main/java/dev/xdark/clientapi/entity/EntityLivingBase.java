@@ -4,9 +4,12 @@ import static dev.xdark.clientapi.util.SideEffects.objectValue;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.inventory.EntityEquipmentSlot;
 import dev.xdark.clientapi.item.ItemStack;
 import dev.xdark.clientapi.potion.Potion;
 import dev.xdark.clientapi.potion.PotionEffect;
+import dev.xdark.clientapi.util.EnumHand;
+import dev.xdark.clientapi.util.EnumHandSide;
 import java.util.Collection;
 
 @SidedApi(Side.SERVER)
@@ -22,21 +25,17 @@ public interface EntityLivingBase extends Entity {
 
   float getMaxHealth();
 
-  boolean isMovementBlocked();
-
-  void setMovementBlocked(boolean movementBlocked);
-
   ItemStack getHeldItemMainhand();
 
   ItemStack getHeldItemOffhand();
 
-  //ItemStack getItemStackFromSlot(EntityEquipmentSlot slot);
+  ItemStack getItemStackFromSlot(EntityEquipmentSlot slot);
 
   boolean isHandActive();
 
-  //EnumHand getActiveHand();
+  EnumHand getActiveHand();
 
-  //void setActiveHand(EnumHand hand);
+  void setActiveHand(EnumHand hand);
 
   ItemStack getActiveItemStack();
 
@@ -80,13 +79,13 @@ public interface EntityLivingBase extends Entity {
 
   void setArrowCountInEntity(int arrowCountInEntity);
 
-  //void swingArm(EnumHand hand);
+  void swingArm(EnumHand hand);
 
-  //ItemStack getHeldItem(EnumHand hand);
+  ItemStack getHeldItem(EnumHand hand);
 
-  //void setHeldItem(EnumHand hand, ItemStack stack);
+  void setHeldItem(EnumHand hand, ItemStack stack);
 
-  //boolean hasItemInSlot(EntityEquipmentSlot slot);
+  boolean hasItemInSlot(EntityEquipmentSlot slot);
 
   void jump();
 
@@ -102,7 +101,7 @@ public interface EntityLivingBase extends Entity {
 
   void setRenderYawOffset(float renderYawOffset);
 
-  //EnumHandSide getPrimaryHand();
+  EnumHandSide getPrimaryHand();
 
   boolean isJumping();
 

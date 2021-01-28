@@ -19,4 +19,8 @@ public interface ThreadManagement {
   ScheduledExecutorService newScheduledThreadPool(int coreThreads);
 
   boolean inMainThread();
+
+  void sleep(long millis) throws InterruptedException;
+
+  void sleep(long millis, int nanos) throws InterruptedException;
 }

@@ -2,6 +2,10 @@ package dev.xdark.clientapi.inventory;
 
 import static dev.xdark.clientapi.util.SideEffects.objectValue;
 
+import dev.xdark.clientapi.Side;
+import dev.xdark.clientapi.SidedApi;
+
+@SidedApi(Side.SERVER)
 public interface ClickType {
 
   ClickType PICKUP = objectValue(),
