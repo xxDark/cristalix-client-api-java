@@ -21,7 +21,7 @@ import dev.xdark.clientapi.render.RenderItem;
 import dev.xdark.clientapi.render.ScaledResolution;
 import dev.xdark.clientapi.render.Tessellator;
 import dev.xdark.clientapi.resource.ResourceManager;
-import dev.xdark.clientapi.runtime.System;
+import dev.xdark.clientapi.runtime.Platform;
 import dev.xdark.clientapi.skin.SkinManager;
 import dev.xdark.clientapi.text.TextProvider;
 import dev.xdark.clientapi.texture.RenderEngine;
@@ -52,7 +52,7 @@ public interface ClientApi {
 
   EventBus messageBus();
 
-  System system();
+  Platform platform();
 
   @SidedApi(Side.SERVER)
   PotionRegistry potionRegistry();
