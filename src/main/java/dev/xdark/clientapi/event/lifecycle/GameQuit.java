@@ -6,5 +6,4 @@ import dev.xdark.clientapi.SidedApi;
 @SidedApi(Side.BOTH)
 public interface GameQuit {
 
-  String KEY = "game_quit";
 }

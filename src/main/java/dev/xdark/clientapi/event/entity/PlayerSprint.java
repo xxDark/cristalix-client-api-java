@@ -7,8 +7,6 @@ import dev.xdark.clientapi.entity.EntityPlayerSP;
 @SidedApi(Side.BOTH)
 public interface PlayerSprint {
 
-  String KEY = "player_sprint";
-
   @SidedApi(Side.SERVER)
   EntityPlayerSP getPlayer();
 

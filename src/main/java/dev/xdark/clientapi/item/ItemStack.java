@@ -13,17 +13,17 @@ public interface ItemStack {
 
   boolean isEmpty();
 
-  ItemStack splitStack(int amount);
+  ItemStack split(int amount);
 
   Item getItem();
 
   float getDestroySpeed(BlockState blockState);
 
-  int getMaxStackSize();
+  int getMaxSize();
 
   boolean isStackable();
 
-  boolean isItemStackDamageable();
+  boolean isDamageable();
 
   boolean isItemDamaged();
 
@@ -59,7 +59,7 @@ public interface ItemStack {
 
   ItemStack setTranslatableName(String name);
 
-  ItemStack setStackDisplayName(String displayName);
+  ItemStack setDisplayName(String displayName);
 
   void clearCustomName();
 

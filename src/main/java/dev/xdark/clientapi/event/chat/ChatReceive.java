@@ -8,8 +8,6 @@ import dev.xdark.clientapi.text.Text;
 @SidedApi(Side.BOTH)
 public interface ChatReceive extends Cancellable {
 
-  String KEY = "chat_receive";
-
   Text getText();
 
   void setText(Text text);

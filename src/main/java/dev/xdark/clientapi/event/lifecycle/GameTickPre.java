@@ -6,5 +6,4 @@ import dev.xdark.clientapi.SidedApi;
 @SidedApi(Side.BOTH)
 public interface GameTickPre {
 
-  String KEY = "game_tick_pre";
 }

@@ -9,6 +9,7 @@ import dev.xdark.clientapi.inventory.Container;
 import dev.xdark.clientapi.inventory.InventoryPlayer;
 import dev.xdark.clientapi.item.ItemStack;
 import dev.xdark.clientapi.nbt.NBTTagCompound;
+import dev.xdark.clientapi.util.EnumHandSide;
 
 @SidedApi(Side.SERVER)
 public interface EntityPlayer extends EntityLivingBase {
@@ -42,9 +43,9 @@ public interface EntityPlayer extends EntityLivingBase {
 
   int getSleepTimer();
 
-  void addExperience(int p_addExperience_1_);
+  void addExperience(int exp);
 
-  void addExperienceLevel(int p_addExperienceLevel_1_);
+  void addExperienceLevel(int level);
 
   int xpBarCap();
 
@@ -62,13 +63,13 @@ public interface EntityPlayer extends EntityLivingBase {
 
   boolean isCreative();
 
-  //boolean isWearing(EnumPlayerModelParts p_isWearing_1_);
+  boolean isWearing(PlayerModelPart part);
 
   boolean hasReducedDebug();
 
-  void setReducedDebug(boolean p_setReducedDebug_1_);
+  void setReducedDebug(boolean reducedDebug);
 
-  //void setPrimaryHand(EnumHandSide p_setPrimaryHand_1_);
+  void setPrimaryHand(EnumHandSide hand);
 
   NBTTagCompound getLeftShoulderEntity();
 
@@ -84,7 +85,7 @@ public interface EntityPlayer extends EntityLivingBase {
 
   float getLuck();
 
-  //void setWearing(EnumPlayerModelParts part);
+  void setWearing(PlayerModelPart part);
 
   InventoryPlayer getInventory();
 

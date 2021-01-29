@@ -7,5 +7,4 @@ import dev.xdark.clientapi.event.Cancellable;
 @SidedApi(Side.BOTH)
 public interface PotionsRender extends Cancellable {
 
-  String KEY = "potions_render";
 }

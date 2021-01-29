@@ -7,7 +7,5 @@ import dev.xdark.clientapi.event.Cancellable;
 @SidedApi(Side.BOTH)
 public interface MousePress extends Cancellable {
 
-  String KEY = "mouse_press";
-
   int getButton();
 }

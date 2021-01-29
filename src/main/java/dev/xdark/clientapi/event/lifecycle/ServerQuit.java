@@ -7,7 +7,5 @@ import dev.xdark.clientapi.text.Text;
 @SidedApi(Side.BOTH)
 public interface ServerQuit {
 
-  String KEY = "server_quit";
-
   Text getReason();
 }

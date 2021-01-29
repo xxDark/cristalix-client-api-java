@@ -20,6 +20,7 @@ import dev.xdark.clientapi.render.Tessellator;
 import dev.xdark.clientapi.resource.ResourceManager;
 import dev.xdark.clientapi.runtime.Platform;
 import dev.xdark.clientapi.skin.SkinManager;
+import dev.xdark.clientapi.system.Clipboard;
 import dev.xdark.clientapi.text.TextProvider;
 import dev.xdark.clientapi.texture.RenderEngine;
 import dev.xdark.clientapi.thread.ThreadManagement;
@@ -85,4 +86,6 @@ public interface ClientApi {
   MouseHelper mouseHelper();
 
   Minecraft minecraft();
+
+  Clipboard clipboard();
 }

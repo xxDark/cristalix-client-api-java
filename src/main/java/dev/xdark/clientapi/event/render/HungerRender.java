@@ -7,5 +7,4 @@ import dev.xdark.clientapi.event.Cancellable;
 @SidedApi(Side.BOTH)
 public interface HungerRender extends Cancellable {
 
-  String KEY = "hunger_render";
 }

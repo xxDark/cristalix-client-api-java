@@ -7,8 +7,6 @@ import dev.xdark.clientapi.event.Cancellable;
 @SidedApi(Side.SERVER)
 public interface NameTemplateRender extends Cancellable {
 
-  String KEY = "name_template_render";
-
   Object getEntity();
 
   float getX();

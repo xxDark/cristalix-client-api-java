@@ -6,5 +6,4 @@ import dev.xdark.clientapi.SidedApi;
 @SidedApi(Side.BOTH)
 public interface ServerConnect {
 
-  String KEY = "server_connect";
 }

@@ -7,8 +7,6 @@ import dev.xdark.clientapi.event.Cancellable;
 @SidedApi(Side.BOTH)
 public interface ChatSend extends Cancellable {
 
-  String KEY = "chat_send";
-
   String getMessage();
 
   @SidedApi(Side.SERVER)

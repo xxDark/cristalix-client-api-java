@@ -9,13 +9,14 @@ public interface EventBus {
 
   Listener createListener();
 
-  <V> RegisteredListener register(Listener listener, String action, Consumer<V> handler, int priority);
+  <V> RegisteredListener register(Listener listener, Class<V> action, Consumer<V> handler,
+      int priority);
 
-  void unregister(String action, Consumer<?> handler);
+  <V> void unregister(Class<V> action, Consumer<V> handler);
 
   void unregisterAll(Listener listener);
 
-  <V> V post(String action, V value);
+  <V> V post(Class<V> action, V value);
 
-  boolean anyListeners(String action);
+  boolean anyListeners(Class<?> action);
 }

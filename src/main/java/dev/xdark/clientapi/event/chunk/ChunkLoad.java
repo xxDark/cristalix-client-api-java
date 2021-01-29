@@ -7,7 +7,5 @@ import dev.xdark.clientapi.world.chunk.Chunk;
 @SidedApi(Side.SERVER)
 public interface ChunkLoad {
 
-  String KEY = "chunk_load";
-
   Chunk getChunk();
 }

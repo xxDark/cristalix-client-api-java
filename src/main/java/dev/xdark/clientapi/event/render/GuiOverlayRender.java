@@ -7,8 +7,6 @@ import dev.xdark.clientapi.render.ScaledResolution;
 @SidedApi(Side.BOTH)
 public interface GuiOverlayRender {
 
-  String KEY = "gui_overlay_render";
-
   float getPartialTicks();
 
   ScaledResolution getResolution();

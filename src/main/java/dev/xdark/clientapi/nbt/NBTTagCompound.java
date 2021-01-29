@@ -2,11 +2,21 @@ package dev.xdark.clientapi.nbt;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 import java.util.Collection;
+import java.util.Map;
 import java.util.function.Function;
 
 @SidedApi(Side.BOTH)
 public interface NBTTagCompound extends NBTBase {
+
+  static NBTTagCompound create() {
+    throw CompileStub.INSTANCE;
+  }
+
+  static NBTTagCompound create(Map<String, NBTBase> map) {
+    throw CompileStub.INSTANCE;
+  }
 
   void put(String key, NBTBase nbt);
 
@@ -60,7 +70,7 @@ public interface NBTTagCompound extends NBTBase {
 
   byte[] getByteArray(String key);
 
-  NBTTagList getList(String key);
+  NBTTagList getList(String key, int type);
 
   NBTTagCompound getCompound(String key);
 

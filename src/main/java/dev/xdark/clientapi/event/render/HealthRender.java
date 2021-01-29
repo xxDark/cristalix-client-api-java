@@ -7,5 +7,4 @@ import dev.xdark.clientapi.event.Cancellable;
 @SidedApi(Side.BOTH)
 public interface HealthRender extends Cancellable {
 
-  String KEY = "health_render";
 }

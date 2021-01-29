@@ -6,5 +6,4 @@ import dev.xdark.clientapi.SidedApi;
 @SidedApi(Side.BOTH)
 public interface ServerSwitch {
 
-  String KEY = "server_switch";
 }

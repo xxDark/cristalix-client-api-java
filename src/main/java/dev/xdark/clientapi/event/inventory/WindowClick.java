@@ -8,8 +8,6 @@ import dev.xdark.clientapi.inventory.ClickType;
 @SidedApi(Side.SERVER)
 public interface WindowClick extends Cancellable {
 
-  String KEY = "window_click";
-
   int getWindowId();
 
   int getSlot();
