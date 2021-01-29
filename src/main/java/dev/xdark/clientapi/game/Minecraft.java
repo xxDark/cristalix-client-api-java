@@ -35,4 +35,7 @@ public interface Minecraft {
   Entity getRenderViewEntity();
 
   Session getSession();
+
+  @SidedApi(Side.SERVER)
+  PlayerController getPlayerController();
 }
