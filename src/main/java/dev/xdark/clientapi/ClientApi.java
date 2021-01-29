@@ -10,7 +10,6 @@ import dev.xdark.clientapi.input.MouseHelper;
 import dev.xdark.clientapi.item.ItemRegistry;
 import dev.xdark.clientapi.math.MathProvider;
 import dev.xdark.clientapi.nbt.NBTProvider;
-import dev.xdark.clientapi.opengl.GLAllocation;
 import dev.xdark.clientapi.potion.PotionRegistry;
 import dev.xdark.clientapi.render.FontRenderer;
 import dev.xdark.clientapi.render.Framebuffer;
@@ -86,7 +85,4 @@ public interface ClientApi {
   MouseHelper mouseHelper();
 
   Minecraft minecraft();
-
-  @SidedApi(Side.SERVER)
-  GLAllocation glAllocation();
 }

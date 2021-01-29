@@ -2,6 +2,7 @@ package dev.xdark.clientapi.opengl;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -10,31 +11,37 @@ import java.nio.IntBuffer;
 import sun.nio.ch.DirectBuffer;
 
 @SidedApi(Side.SERVER)
-public interface GLAllocation {
+public final class GLAllocation {
 
-  ByteOrder ORDER = ByteOrder.nativeOrder();
+  public static final ByteOrder ORDER = ByteOrder.nativeOrder();
 
-  int generateDisplayLists(int range);
+  private GLAllocation() { }
 
-  void deleteDisplayLists(int list, int range);
-
-  void deleteDisplayLists(int list);
-
-  static ByteBuffer createDirectByteBuffer(int cap) {
-    return ByteBuffer.allocateDirect(cap).order(ORDER);
+  public static int generateDisplayLists(int range) {
+    throw CompileStub.INSTANCE;
   }
 
-  static IntBuffer createDirectIntBuffer(int cap) {
-    return createDirectByteBuffer(cap << 2).asIntBuffer();
+  public static void deleteDisplayLists(int list, int range) {
+    throw CompileStub.INSTANCE;
   }
 
-  static FloatBuffer createDirectFloatBuffer(int cap) {
-    return createDirectByteBuffer(cap << 2).asFloatBuffer();
+  public static void deleteDisplayLists(int list) {
+    throw CompileStub.INSTANCE;
   }
 
-  static void freeBuffer(Buffer buffer) {
-    if (buffer instanceof DirectBuffer) {
-      ((DirectBuffer) buffer).cleaner().clean();
-    }
+  public static ByteBuffer createDirectByteBuffer(int cap) {
+    throw CompileStub.INSTANCE;
+  }
+
+  public static IntBuffer createDirectIntBuffer(int cap) {
+    throw CompileStub.INSTANCE;
+  }
+
+  public static FloatBuffer createDirectFloatBuffer(int cap) {
+    throw CompileStub.INSTANCE;
+  }
+
+  public static void freeBuffer(Buffer buffer) {
+    throw CompileStub.INSTANCE;
   }
 }
