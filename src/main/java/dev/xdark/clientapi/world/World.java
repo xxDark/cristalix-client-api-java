@@ -4,6 +4,7 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.tile.TileEntity;
+import dev.xdark.clientapi.util.ParticleType;
 import dev.xdark.clientapi.world.chunk.ChunkProvider;
 
 @SidedApi(Side.BOTH)
@@ -50,4 +51,8 @@ public interface World {
 
   @SidedApi(Side.SERVER)
   ChunkProvider getChunkProvider();
+
+  @SidedApi(Side.SERVER)
+  void spawnParticle(ParticleType types, boolean isLongDistance, double x, double y, double z,
+      double motionX, double motionY, double motionZ, int... data);
 }
