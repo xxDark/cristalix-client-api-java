@@ -26,9 +26,9 @@ public interface World {
 
   float getStarBrightness(float partialTicks);
 
-  long getTotalWorldTime();
+  long getTotalTime();
 
-  long getWorldTime();
+  long getTime();
 
   boolean isThundering();
 
@@ -55,4 +55,7 @@ public interface World {
   @SidedApi(Side.SERVER)
   void spawnParticle(ParticleType types, boolean isLongDistance, double x, double y, double z,
       double motionX, double motionY, double motionZ, int... data);
+
+  @SidedApi(Side.SERVER)
+  void setTime(long time);
 }
