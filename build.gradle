@@ -16,9 +16,10 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    compileOnly 'org.lwjgl.lwjgl:lwjgl_util_applet:2.9.3'
-    compileOnly 'com.mojang:authlib:1.5.25'
-    compileOnly 'io.netty:netty-buffer:4.1.58.Final'
+    compile 'org.lwjgl.lwjgl:lwjgl:2.9.3'
+    compile 'org.lwjgl.lwjgl:lwjgl_util:2.9.3'
+    compile 'com.mojang:authlib:1.5.25'
+    compile 'io.netty:netty-buffer:4.1.58.Final'
 }
 
 publishing {
