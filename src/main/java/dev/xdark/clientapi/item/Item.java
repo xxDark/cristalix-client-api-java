@@ -3,9 +3,18 @@ package dev.xdark.clientapi.item;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.resource.ResourceLocation;
+import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.SERVER)
 public interface Item {
+
+  static Item of(int id) {
+    throw CompileStub.INSTANCE;
+  }
+
+  static Item of(String idOrLocation) {
+    throw CompileStub.INSTANCE;
+  }
 
   ResourceLocation getLocation();
 

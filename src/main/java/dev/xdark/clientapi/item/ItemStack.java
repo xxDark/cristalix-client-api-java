@@ -7,9 +7,14 @@ import dev.xdark.clientapi.nbt.NBTBase;
 import dev.xdark.clientapi.nbt.NBTTagCompound;
 import dev.xdark.clientapi.nbt.NBTTagList;
 import dev.xdark.clientapi.text.Text;
+import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.BOTH)
 public interface ItemStack {
+
+  static ItemStack of(Item item, int count, int metadata) {
+    throw CompileStub.INSTANCE;
+  }
 
   boolean isEmpty();
 

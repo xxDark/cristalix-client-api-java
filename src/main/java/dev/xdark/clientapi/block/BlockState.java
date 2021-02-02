@@ -2,11 +2,16 @@ package dev.xdark.clientapi.block;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 import java.util.Collection;
 import java.util.Map;
 
 @SidedApi(Side.SERVER)
 public interface BlockState extends BlockProperties {
+
+  static BlockState of(int id) {
+    throw CompileStub.INSTANCE;
+  }
 
   int getId();
 

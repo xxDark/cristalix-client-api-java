@@ -3,9 +3,18 @@ package dev.xdark.clientapi.block;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.resource.ResourceLocation;
+import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.SERVER)
 public interface Block {
+
+  static Block of(int id) {
+    throw CompileStub.INSTANCE;
+  }
+
+  static Block of(String idOrLocation) {
+    throw CompileStub.INSTANCE;
+  }
 
   int getId();
 
