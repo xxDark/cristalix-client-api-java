@@ -20,7 +20,7 @@ package dev.xdark.testmod;
 import dev.xdark.clientapi.ClientApi;
 import dev.xdark.clientapi.entry.ModMain;
 import dev.xdark.clientapi.event.Listener;
-import dev.xdark.clientapi.event.lifecycle.ServerConnect;
+import dev.xdark.clientapi.event.network.ServerConnect;
 import dev.xdark.clientapi.text.Text;
 import dev.xdark.clientapi.text.TextFormatting;
 

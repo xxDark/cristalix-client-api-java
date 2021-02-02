@@ -1,4 +1,4 @@
-package dev.xdark.clientapi.event.lifecycle;
+package dev.xdark.clientapi.event.network;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
