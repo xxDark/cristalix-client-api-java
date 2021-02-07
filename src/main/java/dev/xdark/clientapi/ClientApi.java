@@ -24,6 +24,7 @@ import dev.xdark.clientapi.system.Clipboard;
 import dev.xdark.clientapi.text.TextProvider;
 import dev.xdark.clientapi.texture.RenderEngine;
 import dev.xdark.clientapi.thread.ThreadManagement;
+import java.nio.file.FileSystem;
 
 @SidedApi(Side.BOTH)
 public interface ClientApi {
@@ -88,4 +89,6 @@ public interface ClientApi {
   Minecraft minecraft();
 
   Clipboard clipboard();
+
+  FileSystem fileSystem();
 }

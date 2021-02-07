@@ -53,7 +53,7 @@ public interface World {
   ChunkProvider getChunkProvider();
 
   @SidedApi(Side.SERVER)
-  void spawnParticle(ParticleType types, boolean isLongDistance, double x, double y, double z,
+  void spawnParticle(ParticleType type, boolean isLongDistance, double x, double y, double z,
       double motionX, double motionY, double motionZ, int... data);
 
   @SidedApi(Side.SERVER)
