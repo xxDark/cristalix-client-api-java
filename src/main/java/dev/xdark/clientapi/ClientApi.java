@@ -89,6 +89,4 @@ public interface ClientApi {
   Minecraft minecraft();
 
   Clipboard clipboard();
-
-  FileSystem fileSystem();
 }
