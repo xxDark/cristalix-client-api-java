@@ -3,6 +3,7 @@ package dev.xdark.clientapi;
 import dev.xdark.clientapi.block.BlockRegistry;
 import dev.xdark.clientapi.chat.Chat;
 import dev.xdark.clientapi.discord.DiscordRPC;
+import dev.xdark.clientapi.entity.DataSerializers;
 import dev.xdark.clientapi.entity.EntityProvider;
 import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.game.Minecraft;
@@ -24,7 +25,6 @@ import dev.xdark.clientapi.system.Clipboard;
 import dev.xdark.clientapi.text.TextProvider;
 import dev.xdark.clientapi.texture.RenderEngine;
 import dev.xdark.clientapi.thread.ThreadManagement;
-import java.nio.file.FileSystem;
 
 @SidedApi(Side.BOTH)
 public interface ClientApi {
@@ -89,4 +89,7 @@ public interface ClientApi {
   Minecraft minecraft();
 
   Clipboard clipboard();
+
+  @SidedApi(Side.SERVER)
+  DataSerializers dataSerializers();
 }
