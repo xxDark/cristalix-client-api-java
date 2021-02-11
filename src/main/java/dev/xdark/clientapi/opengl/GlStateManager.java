@@ -512,6 +512,10 @@ public final class GlStateManager {
     throw CompileStub.INSTANCE;
   }
 
+  public static void clearStencil(int s) {
+    throw CompileStub.INSTANCE;
+  }
+
   @SidedApi(Side.SERVER)
   public interface Profile {
 
