@@ -5,6 +5,7 @@ import static dev.xdark.clientapi.util.SideEffects.objectValue;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.util.CompileStub;
+import java.lang.invoke.ForceInline;
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
@@ -496,6 +497,18 @@ public final class GlStateManager {
   }
 
   public static void glMultiDrawArrays(int mode, IntBuffer piFirst, IntBuffer piCount) {
+    throw CompileStub.INSTANCE;
+  }
+
+  public static void stencilFunc(int func, int ref, int mask) {
+    throw CompileStub.INSTANCE;
+  }
+
+  public static void stencilMask(int mask) {
+    throw CompileStub.INSTANCE;
+  }
+
+  public static void stencilOp(int fail, int zfail, int zpass) {
     throw CompileStub.INSTANCE;
   }
 

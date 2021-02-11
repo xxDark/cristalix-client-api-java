@@ -24,4 +24,8 @@ public interface NameTemplateRender extends Cancellable {
   boolean isThirdPersonFrontal();
 
   boolean isSneaking();
+
+  String getName();
+
+  void setName(String name);
 }
