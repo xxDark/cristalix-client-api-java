@@ -5,7 +5,6 @@ import static dev.xdark.clientapi.util.SideEffects.objectValue;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.util.CompileStub;
-import java.lang.invoke.ForceInline;
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
