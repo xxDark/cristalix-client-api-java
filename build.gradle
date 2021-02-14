@@ -24,6 +24,17 @@ dependencies {
 
 publishing {
     repositories {
+        if (System.getenv('CI') == null) {
+            mavenLocal()
+        } else {
+            maven {
+                url 'https://repository.anfanik.me/public/'
+                credentials {
+                    username System.getenv("A5K_USERNAME")
+                    password System.getenv("A5K_PASSWORD")
+                }
+            }
+        }
         mavenLocal()
     }
     publications {
