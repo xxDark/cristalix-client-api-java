@@ -2,6 +2,7 @@ package dev.xdark.clientapi.entity;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.inventory.ContainerLocalMenu;
 
 @SidedApi(Side.SERVER)
 public interface EntityPlayerSP extends AbstractClientPlayer {
@@ -19,4 +20,6 @@ public interface EntityPlayerSP extends AbstractClientPlayer {
   boolean isRowingBoat();
 
   boolean isAutoJumpEnabled();
+
+  int displayContainerMenu(ContainerLocalMenu menu);
 }
