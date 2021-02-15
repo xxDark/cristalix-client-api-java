@@ -230,4 +230,8 @@ public interface Entity {
   void setEntityBoundingBox(AxisAlignedBB aabb);
 
   void setUniqueId(UUID uniqueId);
+
+  Entity getRenderingEntity();
+
+  void setRenderingEntity(Entity entity);
 }
