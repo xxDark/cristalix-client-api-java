@@ -14,10 +14,10 @@ public final class CompressedStreamTools {
   }
 
   public static NBTTagCompound readCompressed(InputStream in) throws IOException {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void writeCompressed(NBTTagCompound compound, OutputStream out) throws IOException {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 }

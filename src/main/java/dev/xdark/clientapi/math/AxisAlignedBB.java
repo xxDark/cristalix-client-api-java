@@ -8,7 +8,7 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface AxisAlignedBB {
 
   static AxisAlignedBB of(double minX, double minY, double minZ, double maxX, double maxY, double maxZ) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   double getMinX();

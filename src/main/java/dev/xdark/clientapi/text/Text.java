@@ -9,15 +9,15 @@ import java.util.List;
 public interface Text extends Iterable<Text> {
 
   static Text of(String literal) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   static TextKeybinding keybinding(String keybinding) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   static Text of(Object... parameters) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   Text setStyle(Style style);

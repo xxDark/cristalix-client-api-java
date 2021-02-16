@@ -9,6 +9,6 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface ContainerLocalMenu extends InventoryBasic {
 
   static ContainerLocalMenu of(String type, Text name, int slots) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 }

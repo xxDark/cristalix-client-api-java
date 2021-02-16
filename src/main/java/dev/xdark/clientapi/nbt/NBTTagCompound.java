@@ -10,16 +10,16 @@ import java.util.function.Function;
 @SidedApi(Side.BOTH)
 public interface NBTTagCompound extends NBTBase {
 
-  static NBTTagCompound create() {
-    throw CompileStub.INSTANCE;
+  static NBTTagCompound of() {
+    throw CompileStub.create();
   }
 
-  static NBTTagCompound create(Map<String, NBTBase> map) {
-    throw CompileStub.INSTANCE;
+  static NBTTagCompound of(Map<String, NBTBase> map) {
+    throw CompileStub.create();
   }
 
   static NBTTagCompound copy(NBTTagCompound compound) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   void put(String key, NBTBase nbt);

@@ -13,7 +13,7 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface ItemStack {
 
   static ItemStack of(Item item, int count, int metadata) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   boolean isEmpty();

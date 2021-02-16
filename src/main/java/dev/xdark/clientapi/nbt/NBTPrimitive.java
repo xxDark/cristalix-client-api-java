@@ -7,32 +7,32 @@ import dev.xdark.clientapi.util.CompileStub;
 @SidedApi(Side.BOTH)
 public interface NBTPrimitive extends NBTBase {
 
-  static NBTPrimitive create(long value) {
-    throw CompileStub.INSTANCE;
+  static NBTPrimitive of(long value) {
+    throw CompileStub.create();
   }
 
-  static NBTPrimitive create(double value) {
-    throw CompileStub.INSTANCE;
+  static NBTPrimitive of(double value) {
+    throw CompileStub.create();
   }
 
-  static NBTPrimitive create(int value) {
-    throw CompileStub.INSTANCE;
+  static NBTPrimitive of(int value) {
+    throw CompileStub.create();
   }
 
-  static NBTPrimitive create(float value) {
-    throw CompileStub.INSTANCE;
+  static NBTPrimitive of(float value) {
+    throw CompileStub.create();
   }
 
-  static NBTPrimitive create(short value) {
-    throw CompileStub.INSTANCE;
+  static NBTPrimitive of(short value) {
+    throw CompileStub.create();
   }
 
-  static NBTPrimitive create(byte value) {
-    throw CompileStub.INSTANCE;
+  static NBTPrimitive of(byte value) {
+    throw CompileStub.create();
   }
 
-  static NBTPrimitive create(boolean value) {
-    throw CompileStub.INSTANCE;
+  static NBTPrimitive of(boolean value) {
+    throw CompileStub.create();
   }
 
   long getLong();

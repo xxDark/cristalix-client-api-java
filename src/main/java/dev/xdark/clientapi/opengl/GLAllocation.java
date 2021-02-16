@@ -17,30 +17,30 @@ public final class GLAllocation {
   private GLAllocation() { }
 
   public static int generateDisplayLists(int range) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void deleteDisplayLists(int list, int range) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void deleteDisplayLists(int list) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static ByteBuffer createDirectByteBuffer(int cap) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static IntBuffer createDirectIntBuffer(int cap) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static FloatBuffer createDirectFloatBuffer(int cap) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void freeBuffer(Buffer buffer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 }

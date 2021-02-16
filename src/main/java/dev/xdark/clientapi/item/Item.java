@@ -9,11 +9,11 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface Item {
 
   static Item of(int id) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   static Item of(String idOrLocation) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   ResourceLocation getLocation();

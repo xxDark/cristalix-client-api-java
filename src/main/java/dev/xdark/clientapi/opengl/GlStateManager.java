@@ -17,502 +17,502 @@ public final class GlStateManager {
   }
 
   public static void pushAttrib() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void popAttrib() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableAlpha() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableAlpha() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void alphaFunc(int func, float ref) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableLighting() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableLighting() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableLight(int idx) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableLight(int idx) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableColorMaterial() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableColorMaterial() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void colorMaterial(int face, int mode) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glLight(int light, int pname, FloatBuffer params) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glLightModel(int pname, FloatBuffer params) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glNormal3f(float nx, float ny, float nz) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableDepth() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableDepth() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void depthFunc(int func) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void depthMask(boolean mask) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableBlend() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableBlend() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void blendFunc(int srcFactor, int destFactor) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void tryBlendFuncSeparate(int srcFactor,
       int dstFactor, int srcFactorAlpha, int dstFactorAlpha) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glBlendEquation(int mode) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableOutlineMode(int color) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableOutlineMode() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableFog() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableFog() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   private static void setFog(int mode) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void setFogDensity(float density) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void setFogStart(float start) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void setFogEnd(float end) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glFog(int pname, FloatBuffer params) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glFogi(int pname, int param) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableCull() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableCull() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   private static void cullFace(int mode) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glPolygonMode(int face, int mode) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enablePolygonOffset() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disablePolygonOffset() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void doPolygonOffset(float factor, float units) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableColorLogic() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableColorLogic() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void colorLogicOp(int opcode) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void setActiveTexture(int texture) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableTexture2D() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableTexture2D() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glTexEnv(int target, int pname, FloatBuffer params) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glTexEnvi(int target, int pname, int param) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glTexEnvf(int target, int pname, float param) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glTexParameterf(int target, int pname, float param) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glTexParameteri(int target, int pname, int param) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
 
   public static int glGetTexLevelParameteri(int target, int level, int pname) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int generateTexture() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void deleteTexture(int id) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void bindTexture(int texture) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glTexImage2D(int target, int level, int internalformat, int width, int height,
       int border, int format, int type, IntBuffer pixels) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glTexSubImage2D(int target, int level, int xoffset, int yoffset, int width,
       int height, int format, int type, IntBuffer pixels) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glCopyTexSubImage2D(int target, int level, int xoffset, int yoffset, int x,
       int y, int width, int height) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glGetTexImage(int target, int level, int format, int type, IntBuffer pixels) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableNormalize() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableNormalize() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void shadeModel(int shadeModel) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableRescaleNormal() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableRescaleNormal() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void viewport(int x, int y, int width, int height) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void colorMask(boolean red, boolean green, boolean blue, boolean alpha) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void clearDepth(double depth) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void clearColor(float red, float green, float blue, float alpha) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void clear(int mask) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void matrixMode(int mode) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void loadIdentity() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void pushMatrix() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void popMatrix() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glGetFloat(int pname, FloatBuffer params) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void ortho(double left, double right, double bottom, double top, double zNear,
       double zFar) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void rotate(float angle, float x, float y, float z) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void scale(float x, float y, float z) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void scale(double x, double y, double z) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void translate(float x, float y, float z) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void translate(double x, double y, double z) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void multMatrix(FloatBuffer m) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void rotate(Quaternion quaternion) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void color(float r, float g, float b, float a) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glTexCoord2f(float s, float t) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glVertex3f(float x, float y, float z) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void resetColor() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glNormalPointer(int type, int stride, ByteBuffer pointer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glTexCoordPointer(int size, int type, int stride, long pointer_buffer_offset) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glTexCoordPointer(int size, int type, int stride, ByteBuffer pointer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glVertexPointer(int size, int type, int stride, int ptr) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glVertexPointer(int size, int type, int stride, ByteBuffer buffer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glColorPointer(int size, int type, int stride, long pointer_buffer_offset) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glColorPointer(int size, int type, int stride, ByteBuffer pointer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glDisableClientState(int cap) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glEnableClientState(int cap) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glBegin(int mode) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glEnd() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glDrawArrays(int mode, int first, int count) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glLineWidth(float width) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void callList(int list) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void callLists(IntBuffer lists) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glDeleteLists(int list, int range) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glNewList(int list, int mode) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glEndList() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int glGenLists(int range) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glPixelStorei(int pname, int param) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glReadPixels(int x, int y, int width, int height, int format, int type,
       IntBuffer pixels) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int glGetError() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glGetInteger(int pname, IntBuffer params) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableBlendProfile(Profile profile) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void disableBlendProfile(Profile profile) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int getActiveTextureUnit() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void bindCurrentTexture() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int getBoundTexture() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void deleteTextures(IntBuffer textures) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static boolean isFogEnabled() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void setFogEnabled(boolean enabled) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glMultiDrawArrays(int mode, IntBuffer piFirst, IntBuffer piCount) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void stencilFunc(int func, int ref, int mask) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void stencilMask(int mask) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void stencilOp(int fail, int zfail, int zpass) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void clearStencil(int s) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   @SidedApi(Side.SERVER)

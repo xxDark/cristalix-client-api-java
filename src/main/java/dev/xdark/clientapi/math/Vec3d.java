@@ -8,7 +8,7 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface Vec3d {
 
   static Vec3d of(double x, double y, double z) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   double getX();

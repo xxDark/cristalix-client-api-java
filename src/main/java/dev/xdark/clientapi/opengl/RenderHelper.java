@@ -12,18 +12,18 @@ public final class RenderHelper {
   }
 
   public static void disableStandardItemLighting() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableStandardItemLighting() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static FloatBuffer setColorBuffer(float r, float g, float b, float a) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void enableGUIStandardItemLighting() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 }

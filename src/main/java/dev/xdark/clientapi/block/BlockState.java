@@ -10,7 +10,7 @@ import java.util.Map;
 public interface BlockState extends BlockProperties {
 
   static BlockState of(int id) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   int getId();

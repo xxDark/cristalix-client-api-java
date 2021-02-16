@@ -10,10 +10,10 @@ public final class Intrinsics {
   private Intrinsics() { }
 
   public static String newStringUnsafe(char[] chars) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static char[] getChars(String str) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 }

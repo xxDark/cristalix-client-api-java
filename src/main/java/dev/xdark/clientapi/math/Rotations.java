@@ -8,7 +8,7 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface Rotations {
 
   static Rotations of(float x, float y, float z) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   float getX();

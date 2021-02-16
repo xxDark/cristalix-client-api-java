@@ -8,7 +8,7 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface Vec3i extends Comparable<Vec3i> {
 
   static Vec3i of(int x, int y, int z) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   int getX();

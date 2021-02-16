@@ -10,7 +10,7 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface HoverEvent {
 
   static HoverEvent of(Action action, Text value) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   Action getAction();

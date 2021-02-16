@@ -9,7 +9,7 @@ import dev.xdark.clientapi.util.Rotation;
 public interface BlockPos extends Vec3i {
 
   static BlockPos of(int x, int y, int z) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   BlockPos add(int x, int y, int z);

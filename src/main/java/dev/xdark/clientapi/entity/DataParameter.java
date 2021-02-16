@@ -8,7 +8,7 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface DataParameter<T> {
 
   static <T> DataParameter<T> of(int id, DataSerializer<T> serializer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   int getId();

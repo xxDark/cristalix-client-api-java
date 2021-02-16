@@ -7,8 +7,8 @@ import dev.xdark.clientapi.util.CompileStub;
 @SidedApi(Side.BOTH)
 public interface NBTTagString extends NBTBase {
 
-  static NBTTagString create(String value) {
-    throw CompileStub.INSTANCE;
+  static NBTTagString of(String value) {
+    throw CompileStub.create();
   }
 
   String getValue();

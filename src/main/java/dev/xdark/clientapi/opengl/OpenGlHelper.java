@@ -69,191 +69,191 @@ public final class OpenGlHelper {
   }
 
   public static int glGetProgrami(int program, int pname) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glAttachShader(int program, int shader) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glDeleteShader(int shader) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int glCreateShader(int type) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glCompileShader(int shader) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int glGetShaderi(int shader, int pname) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUseProgram(int program) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int glCreateProgram() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glDeleteProgram(int program) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glLinkProgram(int program) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniform1(int location, IntBuffer values) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniform1i(int location, int v0) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniform1(int location, FloatBuffer values) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniform2(int location, IntBuffer values) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniform2(int location, FloatBuffer values) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniform3(int location, IntBuffer values) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniform3(int location, FloatBuffer values) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniform4(int location, IntBuffer values) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniform4(int location, FloatBuffer values) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniformMatrix2(int location, boolean transpose, FloatBuffer matrices) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniformMatrix3(int location, boolean transpose, FloatBuffer matrices) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glUniformMatrix4(int location, boolean transpose, FloatBuffer matrices) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int glGenBuffers() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glBindBuffer(int target, int buffer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glBufferData(int target, ByteBuffer data, int usage) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glDeleteBuffers(int buffer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static boolean useVbo() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glBindFramebuffer(int target, int framebuffer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glBindRenderbuffer(int target, int renderbuffer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glDeleteRenderbuffers(int renderbuffer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glDeleteFramebuffers(int framebuffer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int glGenFramebuffers() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int glGenRenderbuffers() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glRenderbufferStorage(int target, int internalformat, int width, int height) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glFramebufferRenderbuffer(int target, int attachment, int renderbuffertarget,
       int renderbuffer) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static int glCheckFramebufferStatus(int target) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glFramebufferTexture2D(int target, int attachment, int textarget, int texture,
       int level) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glActiveTexture(int texture) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glClientActiveTexture(int texture) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void setLightmapTextureCoords(int target, float s, float t) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glBlendFunc(int sfactorRGB, int dfactorRGB, int sfactorAlpha,
       int dfactorAlpha) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static boolean isFramebufferEnabled() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glBufferData(int target, long data_size, int usage) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glBufferSubData(int target, long offset, ByteBuffer data) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static void glCopyBufferSubData(int readtarget, int writetarget, long readoffset,
       long writeoffset, long size) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   public static String getCpu() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   @SidedApi(Side.SERVER)

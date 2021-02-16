@@ -14,15 +14,15 @@ public interface Style {
   int OBFUSCATED = 16;
 
   static Style of(int caps, Object... parameters) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   static Style of(Object... parameters) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   static Style create() {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   TextFormatting getColor();

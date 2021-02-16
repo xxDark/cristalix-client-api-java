@@ -9,11 +9,11 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface Block {
 
   static Block of(int id) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   static Block of(String idOrLocation) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   int getId();

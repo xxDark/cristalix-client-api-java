@@ -10,7 +10,7 @@ import dev.xdark.clientapi.util.CompileStub;
 public interface ClickEvent {
 
   static ClickEvent of(Action action, String value) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   Action getAction();

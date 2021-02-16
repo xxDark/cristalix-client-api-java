@@ -2,18 +2,17 @@ package dev.xdark.clientapi.util;
 
 public final class CompileStub extends RuntimeException {
 
-  public static final CompileStub INSTANCE = new CompileStub();
+  private static final boolean DEBUGGING = false;
+  public static final CompileStub INSTANCE = new CompileStub(0);
+
+  private CompileStub(int unused) {
+    super(null, null, false, false);
+  }
 
   private CompileStub() {
   }
 
-  @Override
-  public Throwable fillInStackTrace() {
-    return this;
-  }
-
-  @Override
-  public Throwable initCause(Throwable cause) {
-    return this;
+  public static CompileStub create() {
+    return DEBUGGING ? new CompileStub() : INSTANCE;
   }
 }

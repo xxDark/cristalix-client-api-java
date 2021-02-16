@@ -8,16 +8,16 @@ import java.util.List;
 @SidedApi(Side.BOTH)
 public interface NBTTagList extends NBTBase {
 
-  static NBTTagList create() {
-    throw CompileStub.INSTANCE;
+  static NBTTagList of() {
+    throw CompileStub.create();
   }
 
-  static NBTTagList create(List<NBTBase> list) {
-    throw CompileStub.INSTANCE;
+  static NBTTagList of(List<NBTBase> list) {
+    throw CompileStub.create();
   }
 
   static NBTTagList copy(NBTTagList list) {
-    throw CompileStub.INSTANCE;
+    throw CompileStub.create();
   }
 
   void set(int idx, NBTBase nbt);
