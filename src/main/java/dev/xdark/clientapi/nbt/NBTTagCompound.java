@@ -18,6 +18,10 @@ public interface NBTTagCompound extends NBTBase {
     throw CompileStub.INSTANCE;
   }
 
+  static NBTTagCompound copy(NBTTagCompound compound) {
+    throw CompileStub.INSTANCE;
+  }
+
   void put(String key, NBTBase nbt);
 
   NBTBase putIfAbsent(String key, NBTBase nbt);

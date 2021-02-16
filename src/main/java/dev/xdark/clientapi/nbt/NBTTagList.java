@@ -16,6 +16,10 @@ public interface NBTTagList extends NBTBase {
     throw CompileStub.INSTANCE;
   }
 
+  static NBTTagList copy(NBTTagList list) {
+    throw CompileStub.INSTANCE;
+  }
+
   void set(int idx, NBTBase nbt);
 
   void add(int idx, NBTBase nbt);
