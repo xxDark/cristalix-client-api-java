@@ -5,10 +5,11 @@ import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityPlayerSP;
 import dev.xdark.clientapi.particle.ParticleManager;
+import dev.xdark.clientapi.util.ThreadListener;
 import dev.xdark.clientapi.world.World;
 
 @SidedApi(Side.BOTH)
-public interface Minecraft {
+public interface Minecraft extends ThreadListener {
 
   @SidedApi(Side.SERVER)
   Timer getTimer();
