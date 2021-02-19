@@ -3,7 +3,7 @@ package dev.xdark.clientapi.util;
 public final class CompileStub extends RuntimeException {
 
   private static final boolean DEBUGGING = false;
-  public static final CompileStub INSTANCE = new CompileStub(0);
+  private static final CompileStub INSTANCE = new CompileStub(0);
 
   private CompileStub(int unused) {
     super(null, null, false, false);

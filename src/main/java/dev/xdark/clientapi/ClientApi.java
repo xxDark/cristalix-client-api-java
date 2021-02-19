@@ -26,6 +26,7 @@ import dev.xdark.clientapi.system.Clipboard;
 import dev.xdark.clientapi.text.TextProvider;
 import dev.xdark.clientapi.texture.RenderEngine;
 import dev.xdark.clientapi.thread.ThreadManagement;
+import java.util.concurrent.ScheduledExecutorService;
 
 @SidedApi(Side.BOTH)
 public interface ClientApi {
@@ -96,4 +97,6 @@ public interface ClientApi {
 
   @SidedApi(Side.SERVER)
   ClientConnection clientConnection();
+
+  ScheduledExecutorService syncExecutorService();
 }
