@@ -1,5 +1,6 @@
 package dev.xdark.clientapi.network;
 
+import com.mojang.authlib.GameProfile;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import io.netty.buffer.ByteBuf;
@@ -22,4 +23,6 @@ public interface ClientConnection {
   Collection<NetworkPlayerInfo> getPlayerInfos();
 
   void sendPayload(String channel, ByteBuf buf);
+
+  NetworkPlayerInfo newPlayerInfo(GameProfile profile);
 }

@@ -5,14 +5,9 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.resource.ResourceLocation;
 import dev.xdark.clientapi.text.Text;
-import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.SERVER)
 public interface NetworkPlayerInfo {
-
-  static NetworkPlayerInfo of(GameProfile profile) {
-    throw CompileStub.create();
-  }
 
   GameProfile getGameProfile();
 
