@@ -87,6 +87,8 @@ public interface EntityLivingBase extends Entity {
 
   boolean hasItemInSlot(EntityEquipmentSlot slot);
 
+  void setItemInSlot(EntityEquipmentSlot slot, ItemStack stack);
+
   void jump();
 
   void travel(float x, float y, float z);
