@@ -48,4 +48,8 @@ public interface Vec3d {
   Vec3d rotateYaw(float yaw);
 
   Vec3d rotatePitch(float pitch);
+
+  Vec3d set(double x, double y, double z);
+
+  Vec3d set(Vec3d o);
 }

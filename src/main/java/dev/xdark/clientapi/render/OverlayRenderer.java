@@ -2,6 +2,7 @@ package dev.xdark.clientapi.render;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.item.ItemStack;
 
 @SidedApi(Side.BOTH)
 public interface OverlayRenderer {
@@ -21,4 +22,6 @@ public interface OverlayRenderer {
 
   void drawScaledCustomSizeModalRect(int x, int y, float u, float v, int uWidth, int vHeight,
       int width, int height, float tileWidth, float tileHeight);
+
+  void displayItemActivation(ItemStack stack);
 }
