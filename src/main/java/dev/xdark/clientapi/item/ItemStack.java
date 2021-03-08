@@ -16,6 +16,10 @@ public interface ItemStack {
     throw CompileStub.create();
   }
 
+  static ItemStack of(NBTTagCompound tag) {
+    throw CompileStub.create();
+  }
+
   boolean isEmpty();
 
   ItemStack split(int amount);
