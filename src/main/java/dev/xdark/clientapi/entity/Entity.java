@@ -11,6 +11,7 @@ import dev.xdark.clientapi.math.Vec3d;
 import dev.xdark.clientapi.text.HoverEvent;
 import dev.xdark.clientapi.text.Text;
 import dev.xdark.clientapi.util.EnumFacing;
+import dev.xdark.clientapi.world.World;
 import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
@@ -234,4 +235,6 @@ public interface Entity {
   Entity getRenderingEntity();
 
   void setRenderingEntity(Entity entity);
+
+  World getWorld();
 }
