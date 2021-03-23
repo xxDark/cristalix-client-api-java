@@ -21,4 +21,6 @@ public interface RenderEngine {
   DynamicTexture newDynamicTexture(BufferedImage image);
 
   DynamicTexture newDynamicTexture(int width, int height);
+
+  Texture newImageTexture(BufferedImage image, boolean blur, boolean clamp);
 }
