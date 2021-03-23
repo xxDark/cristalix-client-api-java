@@ -6,6 +6,7 @@ import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityPlayerSP;
 import dev.xdark.clientapi.particle.ParticleManager;
 import dev.xdark.clientapi.render.RenderGlobal;
+import dev.xdark.clientapi.render.RenderManager;
 import dev.xdark.clientapi.util.ThreadListener;
 import dev.xdark.clientapi.world.World;
 
@@ -47,4 +48,7 @@ public interface Minecraft extends ThreadListener {
 
   @SidedApi(Side.SERVER)
   RenderGlobal getRenderGlobal();
+
+  @SidedApi(Side.SERVER)
+  RenderManager getRenderManager();
 }

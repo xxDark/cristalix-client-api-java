@@ -19,4 +19,6 @@ public interface Container {
   void putStackInSlot(int slot, ItemStack stack);
 
   void setAll(List<ItemStack> list);
+
+  int getWindowId();
 }

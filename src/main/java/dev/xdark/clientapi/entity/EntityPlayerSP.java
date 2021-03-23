@@ -22,4 +22,6 @@ public interface EntityPlayerSP extends AbstractClientPlayer {
   boolean isAutoJumpEnabled();
 
   int displayContainerMenu(ContainerLocalMenu menu);
+
+  void closeScreen();
 }
