@@ -51,6 +51,7 @@ public interface ClientApi {
 
   EventBus eventBus();
 
+  @Deprecated
   EventBus messageBus();
 
   Platform platform();
