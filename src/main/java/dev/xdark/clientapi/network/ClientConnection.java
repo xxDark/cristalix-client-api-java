@@ -3,7 +3,7 @@ package dev.xdark.clientapi.network;
 import com.mojang.authlib.GameProfile;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import dev.xdark.clientapi.network.protocol.Packet;
+import dev.xdark.feder.network.Packet;
 import io.netty.buffer.ByteBuf;
 import java.util.Collection;
 import java.util.UUID;

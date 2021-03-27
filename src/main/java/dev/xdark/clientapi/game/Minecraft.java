@@ -51,4 +51,10 @@ public interface Minecraft extends ThreadListener {
 
   @SidedApi(Side.SERVER)
   RenderManager getRenderManager();
+
+  ScreenshotHelper getScreenshotHelper();
+
+  int getDisplayWidth();
+
+  int getDisplayHeight();
 }

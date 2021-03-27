@@ -4,6 +4,8 @@ import static dev.xdark.clientapi.util.SideEffects.objectValue;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.feder.network.Packet;
+import dev.xdark.feder.network.ProtocolDirection;
 
 @SidedApi(Side.SERVER)
 public interface ConnectionState {
@@ -13,16 +15,9 @@ public interface ConnectionState {
   //LOGIN = objectValue(),
   //STATUS = objectValue();
 
-  int getPacketId(PacketDirection direction, Packet packet);
+  int getPacketId(ProtocolDirection direction, Packet packet);
 
-  Packet getPacket(PacketDirection direction, int id);
+  Packet getPacket(ProtocolDirection direction, int id);
 
   int getId();
-
-  @SidedApi(Side.SERVER)
-  interface PacketDirection {
-
-    PacketDirection CLIENTBOUND = objectValue(),
-        SERVERBOUND = objectValue();
-  }
 }
