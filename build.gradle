@@ -5,16 +5,6 @@ group 'dev.xdark'
 version '1.0'
 
 repositories {
-    def user = System.getenv 'A5K_USERNAME'
-    if (user != null) {
-        maven {
-            url 'https://repository.anfanik.me/public/'
-            credentials {
-                username user
-                password System.getenv('A5K_PASSWORD')
-            }
-        }
-    }
     mavenLocal()
     mavenCentral()
     maven { url 'https://libraries.minecraft.net/' }
