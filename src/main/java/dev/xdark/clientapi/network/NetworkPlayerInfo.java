@@ -6,6 +6,8 @@ import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.resource.ResourceLocation;
 import dev.xdark.clientapi.text.Text;
 
+import java.util.concurrent.CompletableFuture;
+
 @SidedApi(Side.SERVER)
 public interface NetworkPlayerInfo {
 
@@ -50,6 +52,8 @@ public interface NetworkPlayerInfo {
   void setRenderVisibilityId(long renderVisibilityId);
 
   void setSkinType(String skinType);
+
+  CompletableFuture<Void> loadTextures();
 
   void reloadTextures();
 }
