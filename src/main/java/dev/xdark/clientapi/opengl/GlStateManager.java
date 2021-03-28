@@ -515,6 +515,14 @@ public final class GlStateManager {
     throw CompileStub.create();
   }
 
+  public static void enableStencil() {
+    throw CompileStub.create();
+  }
+
+  public static void disableStencil() {
+    throw CompileStub.create();
+  }
+
   @SidedApi(Side.SERVER)
   public interface Profile {
 
