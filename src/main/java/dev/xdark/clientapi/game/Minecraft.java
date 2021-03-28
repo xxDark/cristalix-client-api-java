@@ -10,8 +10,10 @@ import dev.xdark.clientapi.render.RenderManager;
 import dev.xdark.clientapi.util.ThreadListener;
 import dev.xdark.clientapi.world.World;
 
+import java.util.concurrent.Executor;
+
 @SidedApi(Side.BOTH)
-public interface Minecraft extends ThreadListener {
+public interface Minecraft extends Executor, ThreadListener {
 
   @SidedApi(Side.SERVER)
   Timer getTimer();
