@@ -8,6 +8,7 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven { url 'https://libraries.minecraft.net/' }
+    maven { url 'https://repo.implario.dev/public/' }
 }
 
 sourceCompatibility = targetCompatibility = 1.8
