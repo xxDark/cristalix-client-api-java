@@ -3,7 +3,6 @@ package dev.xdark.clientapi.network;
 import com.mojang.authlib.GameProfile;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import dev.xdark.clientapi.game.Minecraft;
 import dev.xdark.clientapi.resource.ResourceLocation;
 import dev.xdark.clientapi.text.Text;
 
@@ -57,12 +56,4 @@ public interface NetworkPlayerInfo {
   CompletableFuture<Void> loadTextures();
 
   void reloadTextures();
-
-  default void test() {
-    Minecraft mc = null;
-    NetworkPlayerInfo info = null;
-    info.loadTextures().thenRunAsync(() -> {
-      info.getLocationSkin();
-    }, mc);
-  }
 }
