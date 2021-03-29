@@ -14,11 +14,12 @@ sourceCompatibility = targetCompatibility = 1.8
 tasks.withType(JavaCompile)*.options*.encoding = 'UTF-8'
 
 dependencies {
-    implementation 'org.lwjgl.lwjgl:lwjgl:2.9.3'
-    implementation 'org.lwjgl.lwjgl:lwjgl_util:2.9.3'
-    implementation 'com.mojang:authlib:2.1.28'
-    implementation 'io.netty:netty-buffer:4.1.58.Final'
-    implementation 'dev.xdark:feder:1.0-SNAPSHOT'
+    compileOnly 'org.lwjgl.lwjgl:lwjgl:2.9.3'
+    compileOnly 'org.lwjgl.lwjgl:lwjgl_util:2.9.3'
+    compileOnly 'com.mojang:authlib:2.1.28'
+    compileOnly 'io.netty:netty-buffer:4.1.58.Final'
+    compileOnly 'dev.xdark:feder:1.0-SNAPSHOT'
+    compileOnly 'com.google.guava:guava:21.0'
 }
 
 publishing {
