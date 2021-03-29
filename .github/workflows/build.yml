@@ -11,10 +11,8 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Build with Gradle
-        run: ./gradlew build
       - name: Publish with Gradle
-        run: ./gradlew publish
+        run: ./gradlew --no-daemon publish
         env:
           A5K_USERNAME: ${{ secrets.A5K_USERNAME }}
           A5K_PASSWORD: ${{ secrets.A5K_PASSWORD }}
