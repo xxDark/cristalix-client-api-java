@@ -16,6 +16,8 @@ jobs:
         env:
           A5K_USERNAME: ${{ secrets.A5K_USERNAME }}
           A5K_PASSWORD: ${{ secrets.A5K_PASSWORD }}
+          IMPLARIO_REPO_USER: ${{ secrets.IMPLARIO_REPO_USER }}
+          IMPLARIO_REPO_PASSWORD: ${{ secrets.IMPLARIO_REPO_PASSWORD }}
         continue-on-error: true
       - uses: actions/upload-artifact@v2
         with:
