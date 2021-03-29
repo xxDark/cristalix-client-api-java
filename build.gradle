@@ -7,6 +7,7 @@ version '1.0'
 repositories {
     mavenLocal()
     mavenCentral()
+    maven { url 'https://repo.implario.dev/public/' }
 }
 
 sourceCompatibility = targetCompatibility = 1.8
