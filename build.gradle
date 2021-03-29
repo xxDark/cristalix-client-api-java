@@ -24,7 +24,7 @@ dependencies {
 
 publishing {
     repositories {
-        def user = System.getenv 'IMPLARIO_REPO_PASSWORD'
+        def user = System.getenv 'IMPLARIO_REPO_USER'
         if (user != null) {
             maven {
                 url = 'https://repo.implario.dev/public/'
