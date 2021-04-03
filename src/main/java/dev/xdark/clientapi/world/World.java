@@ -3,6 +3,8 @@ package dev.xdark.clientapi.world;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.entity.Entity;
+import dev.xdark.clientapi.sound.SoundCategory;
+import dev.xdark.clientapi.sound.SoundEvent;
 import dev.xdark.clientapi.tile.TileEntity;
 import dev.xdark.clientapi.util.ParticleType;
 import dev.xdark.clientapi.world.chunk.ChunkProvider;
@@ -58,4 +60,8 @@ public interface World {
 
   @SidedApi(Side.SERVER)
   void setTime(long time);
+
+  @SidedApi(Side.SERVER)
+  void playSound(double x, double y, double z, SoundEvent event,
+                 SoundCategory category, float volume, float pitch, boolean checkDistance);
 }

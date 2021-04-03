@@ -4,6 +4,7 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityPlayerSP;
+import dev.xdark.clientapi.math.RayTraceResult;
 import dev.xdark.clientapi.particle.ParticleManager;
 import dev.xdark.clientapi.render.EntityRenderer;
 import dev.xdark.clientapi.render.RenderGlobal;
@@ -63,4 +64,7 @@ public interface Minecraft extends Executor, ThreadListener {
 
   @SidedApi(Side.SERVER)
   EntityRenderer getEntityRenderer();
+
+  @SidedApi(Side.SERVER)
+  RayTraceResult getMouseOver();
 }
