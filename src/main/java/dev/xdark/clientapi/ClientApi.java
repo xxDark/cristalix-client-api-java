@@ -9,16 +9,12 @@ import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.game.Minecraft;
 import dev.xdark.clientapi.input.MouseHelper;
 import dev.xdark.clientapi.item.ItemRegistry;
+import dev.xdark.clientapi.logging.LoggingManagement;
 import dev.xdark.clientapi.math.MathProvider;
 import dev.xdark.clientapi.nbt.NBTProvider;
 import dev.xdark.clientapi.network.ClientConnection;
 import dev.xdark.clientapi.potion.PotionRegistry;
-import dev.xdark.clientapi.render.FontRenderer;
-import dev.xdark.clientapi.render.Framebuffer;
-import dev.xdark.clientapi.render.OverlayRenderer;
-import dev.xdark.clientapi.render.RenderItem;
-import dev.xdark.clientapi.render.ScaledResolution;
-import dev.xdark.clientapi.render.Tessellator;
+import dev.xdark.clientapi.render.*;
 import dev.xdark.clientapi.resource.ResourceManager;
 import dev.xdark.clientapi.runtime.Platform;
 import dev.xdark.clientapi.skin.SkinManager;
@@ -26,6 +22,7 @@ import dev.xdark.clientapi.system.Clipboard;
 import dev.xdark.clientapi.text.TextProvider;
 import dev.xdark.clientapi.texture.RenderEngine;
 import dev.xdark.clientapi.thread.ThreadManagement;
+
 import java.util.concurrent.ScheduledExecutorService;
 
 @SidedApi(Side.BOTH)
@@ -99,4 +96,7 @@ public interface ClientApi {
   ClientConnection clientConnection();
 
   ScheduledExecutorService syncExecutorService();
+
+  @SidedApi(Side.SERVER)
+  LoggingManagement loggingManagement();
 }
