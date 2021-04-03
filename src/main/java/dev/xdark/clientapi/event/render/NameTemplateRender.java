@@ -7,7 +7,7 @@ import dev.xdark.clientapi.event.Cancellable;
 @SidedApi(Side.SERVER)
 public interface NameTemplateRender extends Cancellable {
 
-  Object getEntity();
+  Object getEntity(); // TODO fix that
 
   float getX();
 

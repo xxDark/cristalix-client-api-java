@@ -5,6 +5,7 @@ import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityPlayerSP;
 import dev.xdark.clientapi.particle.ParticleManager;
+import dev.xdark.clientapi.render.EntityRenderer;
 import dev.xdark.clientapi.render.RenderGlobal;
 import dev.xdark.clientapi.render.RenderManager;
 import dev.xdark.clientapi.util.ThreadListener;
@@ -59,4 +60,7 @@ public interface Minecraft extends Executor, ThreadListener {
   int getDisplayWidth();
 
   int getDisplayHeight();
+
+  @SidedApi(Side.SERVER)
+  EntityRenderer getEntityRenderer();
 }
