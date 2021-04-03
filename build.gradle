@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 group 'dev.xdark'
-version '1.0.8'
+version '1.0.9'
 
 repositories {
     mavenLocal()
