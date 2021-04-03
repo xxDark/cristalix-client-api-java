@@ -96,7 +96,6 @@ public interface ClientApi {
   @SidedApi(Side.SERVER)
   DataSerializers dataSerializers();
 
-  @SidedApi(Side.SERVER)
   ClientConnection clientConnection();
 
   ScheduledExecutorService syncExecutorService();

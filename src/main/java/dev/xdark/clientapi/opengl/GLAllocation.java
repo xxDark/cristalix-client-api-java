@@ -9,21 +9,24 @@ import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 
-@SidedApi(Side.SERVER)
+@SidedApi(Side.BOTH)
 public final class GLAllocation {
 
   public static final ByteOrder ORDER = ByteOrder.nativeOrder();
 
   private GLAllocation() { }
 
+  @SidedApi(Side.SERVER)
   public static int generateDisplayLists(int range) {
     throw CompileStub.create();
   }
 
+  @SidedApi(Side.SERVER)
   public static void deleteDisplayLists(int list, int range) {
     throw CompileStub.create();
   }
 
+  @SidedApi(Side.SERVER)
   public static void deleteDisplayLists(int list) {
     throw CompileStub.create();
   }
