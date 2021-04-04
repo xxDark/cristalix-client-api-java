@@ -1,11 +1,11 @@
 package dev.xdark.clientapi.render;
 
-import static dev.xdark.clientapi.util.SideEffects.objectValue;
-
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 
-@SidedApi(Side.SERVER)
+import static dev.xdark.clientapi.util.SideEffects.objectValue;
+
+@SidedApi(Side.BOTH)
 public final class DefaultVertexFormats {
 
   public static VertexFormat BLOCK = objectValue();

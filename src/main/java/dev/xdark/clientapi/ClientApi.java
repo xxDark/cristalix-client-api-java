@@ -41,7 +41,6 @@ public interface ClientApi {
 
   ResourceManager resourceManager();
 
-  @SidedApi(Side.SERVER)
   Tessellator tessellator();
 
   @SidedApi(Side.SERVER)

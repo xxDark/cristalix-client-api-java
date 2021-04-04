@@ -3,7 +3,7 @@ package dev.xdark.clientapi.render;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 
-@SidedApi(Side.SERVER)
+@SidedApi(Side.BOTH)
 public interface BufferBuilder {
 
   void sortVertexData(float cameraX, float cameraY, float cameraZ);
