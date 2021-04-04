@@ -9,6 +9,7 @@ import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.game.Minecraft;
 import dev.xdark.clientapi.input.MouseHelper;
 import dev.xdark.clientapi.item.ItemRegistry;
+import dev.xdark.clientapi.jvm.Natives;
 import dev.xdark.clientapi.logging.LoggingManagement;
 import dev.xdark.clientapi.math.MathProvider;
 import dev.xdark.clientapi.nbt.NBTProvider;
@@ -99,4 +100,6 @@ public interface ClientApi {
 
   @SidedApi(Side.SERVER)
   LoggingManagement loggingManagement();
+
+  Natives natives();
 }
