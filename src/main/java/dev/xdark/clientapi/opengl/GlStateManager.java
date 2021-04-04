@@ -1,16 +1,17 @@
 package dev.xdark.clientapi.opengl;
 
-import static dev.xdark.clientapi.util.SideEffects.objectValue;
-
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.util.CompileStub;
+import org.lwjgl.util.vector.Quaternion;
+
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
-import org.lwjgl.util.vector.Quaternion;
 
-@SidedApi(Side.SERVER)
+import static dev.xdark.clientapi.util.SideEffects.objectValue;
+
+@SidedApi(Side.BOTH)
 public final class GlStateManager {
 
   private GlStateManager() {
@@ -224,7 +225,6 @@ public final class GlStateManager {
   public static void glTexParameteri(int target, int pname, int param) {
     throw CompileStub.create();
   }
-
 
   public static int glGetTexLevelParameteri(int target, int level, int pname) {
     throw CompileStub.create();
