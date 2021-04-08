@@ -9,6 +9,7 @@ import dev.xdark.clientapi.particle.ParticleManager;
 import dev.xdark.clientapi.render.EntityRenderer;
 import dev.xdark.clientapi.render.RenderGlobal;
 import dev.xdark.clientapi.render.RenderManager;
+import dev.xdark.clientapi.sound.SoundHandler;
 import dev.xdark.clientapi.util.ThreadListener;
 import dev.xdark.clientapi.world.World;
 
@@ -70,4 +71,7 @@ public interface Minecraft extends Executor, ThreadListener {
   RayTraceResult getMouseOver();
 
   boolean inGameHasFocus();
+
+  @SidedApi(Side.SERVER)
+  SoundHandler getSoundHandler();
 }
