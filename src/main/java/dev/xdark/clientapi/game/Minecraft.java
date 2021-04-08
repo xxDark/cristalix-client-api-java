@@ -37,6 +37,7 @@ public interface Minecraft extends Executor, ThreadListener {
 
   boolean isFullScreen();
 
+  @Deprecated
   boolean isGamePaused();
 
   @SidedApi(Side.SERVER)
@@ -67,4 +68,6 @@ public interface Minecraft extends Executor, ThreadListener {
 
   @SidedApi(Side.SERVER)
   RayTraceResult getMouseOver();
+
+  boolean inGameHasFocus();
 }
