@@ -4,6 +4,7 @@ import static dev.xdark.clientapi.util.SideEffects.objectValue;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.SERVER)
 public interface Material {
@@ -59,4 +60,36 @@ public interface Material {
   boolean isToolRequired();
 
   MapColor getMapColor();
+
+  @SidedApi(Side.SERVER)
+  interface Builder {
+
+    static Builder builder() {
+      throw CompileStub.create();
+    }
+
+    Builder liquid(boolean liquid);
+
+    Builder solid(boolean solid);
+
+    Builder blocksLight(boolean blocksLight);
+
+    Builder blocksMovement(boolean blocksMovement);
+
+    Builder translucent(boolean translucent);
+
+    Builder burning(boolean burning);
+
+    Builder requiresTool(boolean requiresTool);
+
+    Builder replaceable(boolean replaceable);
+
+    Builder pushReaction(PushReaction reaction);
+
+    Builder color(MapColor color);
+
+    Builder color(int color);
+
+    Material build();
+  }
 }
