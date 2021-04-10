@@ -10,8 +10,8 @@ import java.io.IOException;
 import static dev.xdark.clientapi.util.SideEffects.objectValue;
 
 @SidedApi(Side.SERVER)
-public interface GuiScreenAdapter {
-  GuiScreenAdapter STANDARD = objectValue();
+public interface ScreenAdapter {
+  ScreenAdapter STANDARD = objectValue();
 
   void drawScreen(int mouseX, int mouseY, float tickLength);
 

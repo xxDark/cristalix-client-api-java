@@ -71,7 +71,7 @@ public interface GuiScreen extends Gui {
 
     Builder label(GuiLabel label);
 
-    Builder adapter(GuiScreenAdapter adapter);
+    Builder adapter(ScreenAdapter adapter);
 
     GuiScreen build();
   }
