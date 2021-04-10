@@ -19,6 +19,7 @@ import dev.xdark.clientapi.render.*;
 import dev.xdark.clientapi.resource.ResourceManager;
 import dev.xdark.clientapi.runtime.Platform;
 import dev.xdark.clientapi.skin.SkinManager;
+import dev.xdark.clientapi.sound.SoundHandler;
 import dev.xdark.clientapi.system.Clipboard;
 import dev.xdark.clientapi.text.TextProvider;
 import dev.xdark.clientapi.texture.RenderEngine;
@@ -101,4 +102,7 @@ public interface ClientApi {
   LoggingManagement loggingManagement();
 
   Natives natives();
+
+  @SidedApi(Side.SERVER)
+  SoundHandler soundHandler();
 }

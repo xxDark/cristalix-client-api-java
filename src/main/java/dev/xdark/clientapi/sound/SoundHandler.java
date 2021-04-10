@@ -5,7 +5,7 @@ import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.resource.ResourceLocation;
 
 @SidedApi(Side.SERVER)
-  public interface SoundHandler {
+public interface SoundHandler {
 
   void playSound(SoundRequest request);
 
