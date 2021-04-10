@@ -5,7 +5,6 @@ group 'dev.xdark'
 version 'live-SNAPSHOT'
 
 repositories {
-    mavenLocal()
     mavenCentral()
     maven { url 'https://repo.implario.dev/public/' }
 }
@@ -22,6 +21,7 @@ dependencies {
     compileOnly 'com.google.guava:guava:21.0'
     compileOnly 'org.apache.logging.log4j:log4j-api:2.8.1'
     compileOnly 'org.apache.logging.log4j:log4j-core:2.8.1'
+    compileOnly 'it.unimi.dsi:fastutil:8.3.1'
 }
 
 publishing {
@@ -36,7 +36,6 @@ publishing {
                 }
             }
         }
-        mavenLocal()
     }
     publications {
         maven(MavenPublication) {

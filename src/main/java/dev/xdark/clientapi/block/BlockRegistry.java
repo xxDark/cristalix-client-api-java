@@ -2,6 +2,7 @@ package dev.xdark.clientapi.block;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.resource.ResourceLocation;
 
 @SidedApi(Side.SERVER)
 public interface BlockRegistry {
@@ -11,4 +12,6 @@ public interface BlockRegistry {
   BlockState getState(int id);
 
   Block getBlock(String idOrLocation);
+
+  void register(int id, ResourceLocation location, Block block);
 }
