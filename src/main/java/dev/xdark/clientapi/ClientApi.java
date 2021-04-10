@@ -16,6 +16,8 @@ import dev.xdark.clientapi.nbt.NBTProvider;
 import dev.xdark.clientapi.network.ClientConnection;
 import dev.xdark.clientapi.potion.PotionRegistry;
 import dev.xdark.clientapi.render.*;
+import dev.xdark.clientapi.renderer.block.model.ModelManager;
+import dev.xdark.clientapi.renderer.texture.TextureMap;
 import dev.xdark.clientapi.resource.ResourceManager;
 import dev.xdark.clientapi.runtime.Platform;
 import dev.xdark.clientapi.skin.SkinManager;
@@ -105,4 +107,10 @@ public interface ClientApi {
 
   @SidedApi(Side.SERVER)
   SoundHandler soundHandler();
+
+  @SidedApi(Side.SERVER)
+  TextureMap textureMap();
+
+  @SidedApi(Side.SERVER)
+  ModelManager modelManager();
 }
