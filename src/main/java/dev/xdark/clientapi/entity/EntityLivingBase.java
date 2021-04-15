@@ -101,11 +101,21 @@ public interface EntityLivingBase extends Entity {
 
   boolean canEntityBeSeen(Entity entity);
 
+  float getPrevRenderYawOffset();
+
+  void setPrevRenderYawOffset(float prevRenderYawOffset);
+
+  float getRenderYawOffset();
+
   void setRenderYawOffset(float renderYawOffset);
 
   EnumHandSide getPrimaryHand();
 
   boolean isJumping();
+
+  float getPrevRotationYawHead();
+
+  void setPrevRotationYawHead(float prevRotationYawHead);
 
   float getRotationYawHead();
 

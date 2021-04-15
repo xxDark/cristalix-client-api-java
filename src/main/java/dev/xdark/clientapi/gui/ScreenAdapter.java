@@ -7,12 +7,8 @@ import dev.xdark.clientapi.text.Text;
 
 import java.io.IOException;
 
-import static dev.xdark.clientapi.util.SideEffects.objectValue;
-
 @SidedApi(Side.SERVER)
 public interface ScreenAdapter {
-  ScreenAdapter STANDARD = objectValue();
-
   void drawScreen(int mouseX, int mouseY, float tickLength);
 
   void keyTyped(char c, int code) throws IOException;
