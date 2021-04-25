@@ -92,6 +92,7 @@ public interface EntityProvider {
   int VILLAGER = 120;
   int ENDER_CRYSTAL = 200;
   int PLAYER = 1000;
+  int LIGHTNING_BOLT = 1001;
 
   Entity newEntity(NBTTagCompound info, World world);
 
