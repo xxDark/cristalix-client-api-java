@@ -10,8 +10,6 @@ import dev.xdark.clientapi.tile.TileEntity;
 import dev.xdark.clientapi.util.ParticleType;
 import dev.xdark.clientapi.world.chunk.ChunkProvider;
 
-import java.util.UUID;
-
 @SidedApi(Side.BOTH)
 public interface World {
 
@@ -103,7 +101,4 @@ public interface World {
 
   @SidedApi(Side.SERVER)
   Entity getEntity(int id);
-
-  @SidedApi(Side.SERVER)
-  Entity getEntity(UUID id);
 }
