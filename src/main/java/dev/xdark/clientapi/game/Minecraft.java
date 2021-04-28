@@ -22,7 +22,6 @@ public interface Minecraft extends Executor, ThreadListener {
   @SidedApi(Side.SERVER)
   Timer getTimer();
 
-  @SidedApi(Side.SERVER)
   EntityPlayerSP getPlayer();
 
   @SidedApi(Side.BOTH)
