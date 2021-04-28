@@ -4,7 +4,7 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.text.Text;
 
-@SidedApi(Side.SERVER)
+@SidedApi(Side.BOTH)
 public interface WorldNameable {
 
   String getName();

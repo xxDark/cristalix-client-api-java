@@ -4,7 +4,7 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.item.ItemStack;
 
-@SidedApi(Side.SERVER)
+@SidedApi(Side.BOTH)
 public interface InventoryPlayer extends Inventory {
 
   ItemStack getCurrentItem();

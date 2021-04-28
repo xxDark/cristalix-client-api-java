@@ -5,7 +5,7 @@ import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.item.ItemStack;
 import dev.xdark.clientapi.world.WorldNameable;
 
-@SidedApi(Side.SERVER)
+@SidedApi(Side.BOTH)
 public interface Inventory extends WorldNameable {
 
   int getSizeInventory();
@@ -14,10 +14,13 @@ public interface Inventory extends WorldNameable {
 
   ItemStack getStackInSlot(int slot);
 
+  @SidedApi(Side.SERVER)
   ItemStack decrStackSize(int slot, int count);
 
+  @SidedApi(Side.SERVER)
   ItemStack removeStackFromSlot(int slot);
 
+  @SidedApi(Side.SERVER)
   void setInventorySlotContents(int slot, ItemStack item);
 
   int getInventoryStackLimit();
@@ -26,9 +29,11 @@ public interface Inventory extends WorldNameable {
 
   int getField(int field);
 
+  @SidedApi(Side.SERVER)
   void setField(int field, int value);
 
   int getFieldCount();
 
+  @SidedApi(Side.SERVER)
   void clear();
 }
