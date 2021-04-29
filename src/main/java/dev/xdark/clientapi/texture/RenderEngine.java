@@ -16,6 +16,8 @@ public interface RenderEngine {
 
   void bindTexture(ResourceLocation location);
 
+  void bindTexture(Texture texture);
+
   Texture newSimpleTexture(ResourceLocation location);
 
   DynamicTexture newDynamicTexture(BufferedImage image);
