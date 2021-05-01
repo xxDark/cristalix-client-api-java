@@ -26,11 +26,11 @@ public final class MathHelper {
     throw CompileStub.create();
   }
 
-  public static float floor(float value) {
+  public static int floor(float value) {
     throw CompileStub.create();
   }
 
-  public static double floor(double value) {
+  public static int floor(double value) {
     throw CompileStub.create();
   }
 
