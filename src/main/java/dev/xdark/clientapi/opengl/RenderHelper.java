@@ -5,11 +5,10 @@ import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.util.CompileStub;
 import java.nio.FloatBuffer;
 
-@SidedApi(Side.SERVER)
+@SidedApi(Side.BOTH)
 public final class RenderHelper {
 
-  private RenderHelper() {
-  }
+  private RenderHelper() {}
 
   public static void disableStandardItemLighting() {
     throw CompileStub.create();
