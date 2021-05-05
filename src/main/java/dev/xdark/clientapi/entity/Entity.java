@@ -14,6 +14,7 @@ import dev.xdark.clientapi.util.EnumFacing;
 import dev.xdark.clientapi.world.World;
 import java.util.Collection;
 import java.util.List;
+import java.util.OptionalInt;
 import java.util.UUID;
 
 @SidedApi(Side.SERVER)
@@ -237,4 +238,10 @@ public interface Entity {
   void setRenderingEntity(Entity entity);
 
   World getWorld();
+
+  void setGlowColor(int color);
+
+  OptionalInt getGlowColor();
+
+  void clearGlowColor();
 }
