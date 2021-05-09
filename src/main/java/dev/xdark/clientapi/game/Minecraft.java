@@ -4,7 +4,7 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityPlayerSP;
-import dev.xdark.clientapi.gui.GuiScreen;
+import dev.xdark.clientapi.gui.Screen;
 import dev.xdark.clientapi.math.RayTraceResult;
 import dev.xdark.clientapi.particle.ParticleManager;
 import dev.xdark.clientapi.render.EntityRenderer;
@@ -76,8 +76,8 @@ public interface Minecraft extends Executor, ThreadListener {
   SoundHandler getSoundHandler();
 
   @SidedApi(Side.SERVER)
-  GuiScreen currentScreen();
+  Screen currentScreen();
 
   @SidedApi(Side.SERVER)
-  void displayScreen(GuiScreen screen);
+  void displayScreen(Screen screen);
 }

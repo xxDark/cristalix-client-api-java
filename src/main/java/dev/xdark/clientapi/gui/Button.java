@@ -3,32 +3,38 @@ package dev.xdark.clientapi.gui;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.game.Minecraft;
+import dev.xdark.clientapi.sound.SoundHandler;
+import dev.xdark.clientapi.util.BooleanToIntFunction;
 import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.SERVER)
-public interface GuiButton extends Gui {
+public interface Button extends UIComponent {
+
+  int getId();
 
   int getX();
 
-  void setX(int x);
-
   int getY();
+
+  void setX(int x);
 
   void setY(int y);
 
-  int getWith();
+  void setPos(int x, int y);
 
-  void setWidth(int width);
+  int getWidth();
 
   int getHeight();
 
+  void setWidth(int width);
+
   void setHeight(int height);
+
+  void setDimension(int width, int height);
 
   String getText();
 
   void setText(String text);
-
-  int getId();
 
   boolean isEnabled();
 
@@ -42,7 +48,7 @@ public interface GuiButton extends Gui {
 
   int getHoverState(boolean state);
 
-  void drawButton(Minecraft mc, int x, int y, float tickLength);
+  void draw(Minecraft mc, int x, int y, float tickLength);
 
   void mouseDragged(Minecraft mc, int x, int y);
 
@@ -50,9 +56,9 @@ public interface GuiButton extends Gui {
 
   boolean mousePressed(Minecraft mc, int x, int y);
 
-  boolean isMouseOver();
-
   void drawButtonForegroundLayer(int mouseX, int mouseY);
+
+  void playPressSound(SoundHandler soundHandler);
 
   @SidedApi(Side.SERVER)
   interface Builder {
@@ -62,17 +68,17 @@ public interface GuiButton extends Gui {
 
     Builder id(int id);
 
-    Builder width(int width);
-
-    Builder height(int height);
-
-    Builder dimension(int width, int height);
-
     Builder x(int x);
 
     Builder y(int y);
 
     Builder pos(int x, int y);
+
+    Builder width(int width);
+
+    Builder height(int height);
+
+    Builder dimension(int width, int height);
 
     Builder text(String text);
 
@@ -80,8 +86,20 @@ public interface GuiButton extends Gui {
 
     Builder visible(boolean visible);
 
-    Builder adapter(ButtonAdapter adapter);
+    Builder hoverState(BooleanToIntFunction function);
 
-    GuiButton build();
+    Builder draw(ButtonDrawHandler handler);
+
+    Builder mouseDragged(ButtonMouseDraggedHandler handler);
+
+    Builder mouseReleased(ButtonMouseReleasedHandler handler);
+
+    Builder mousePressed(ButtonMousePressedHandler handler);
+
+    Builder drawButtonForegroundLayer(ButtonForegroundHandler handler);
+
+    Builder playPressSound(ButtonSoundPressHandler handler);
+
+    Button build();
   }
 }

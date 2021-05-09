@@ -5,7 +5,6 @@ import dev.xdark.clientapi.SidedApi;
 
 @SidedApi(Side.SERVER)
 public interface MouseHelper {
-
   void grabMouseCursor();
 
   void ungrabMouseCursor();
