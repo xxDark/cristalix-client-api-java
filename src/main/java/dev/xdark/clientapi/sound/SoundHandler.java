@@ -19,9 +19,9 @@ public interface SoundHandler {
 
   void setSoundLevel(SoundCategory category, float volume);
 
-  void stopSound(SoundRequest request);
+  void stopSound(ResourceLocation location);
 
-  void isSoundPlaying(SoundRequest request);
+  boolean isSoundPlaying(ResourceLocation location);
 
   void stop(ResourceLocation location, SoundCategory category);
 
