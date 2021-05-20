@@ -6,7 +6,7 @@ import dev.xdark.clientapi.SidedApi;
 import java.util.function.Consumer;
 
 @SidedApi(Side.BOTH)
-public interface EventBus<E> {
+public interface EventBus<E extends Event> {
 
   Listener createListener();
 

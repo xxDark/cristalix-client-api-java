@@ -12,7 +12,7 @@ import dev.xdark.clientapi.util.SideEffects;
 @SidedApi(Side.SERVER)
 public interface BlockLayerRender extends Event, Cancellable {
 
-  EventBus<BlockRenderLayer> BUS = SideEffects.objectValue();
+  EventBus<BlockLayerRender> BUS = SideEffects.objectValue();
 
   BlockRenderLayer getLayer();
 
