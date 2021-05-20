@@ -2,10 +2,14 @@ package dev.xdark.clientapi.event.render;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.render.ScaledResolution;
+import dev.xdark.clientapi.util.SideEffects;
 
 @SidedApi(Side.BOTH)
 public interface GuiOverlayRender {
+
+  EventBus<GuiOverlayRender> BUS = SideEffects.objectValue();
 
   float getPartialTicks();
 

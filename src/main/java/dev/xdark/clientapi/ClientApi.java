@@ -49,6 +49,7 @@ public interface ClientApi {
   @SidedApi(Side.SERVER)
   Framebuffer framebuffer();
 
+  @Deprecated
   EventBus eventBus();
 
   @Deprecated
