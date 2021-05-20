@@ -4,25 +4,26 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.event.Cancellable;
+import dev.xdark.clientapi.event.Event;
 import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.util.SideEffects;
 
 @SidedApi(Side.SERVER)
-public interface RotateAround extends Cancellable {
+public interface RotateAround extends Event, Cancellable {
 
-    EventBus<RotateAround> BUS = SideEffects.objectValue();
+  EventBus<RotateAround> BUS = SideEffects.objectValue();
 
-    Entity getEntity();
+  Entity getEntity();
 
-    float getOldYaw();
+  float getOldYaw();
 
-    float getOldPitch();
+  float getOldPitch();
 
-    float getNewYaw();
+  float getNewYaw();
 
-    float getNewPitch();
+  float getNewPitch();
 
-    void setNewYaw(float yaw);
+  void setNewYaw(float yaw);
 
-    void setNewPitch(float pitch);
+  void setNewPitch(float pitch);
 }
