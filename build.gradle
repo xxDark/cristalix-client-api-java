@@ -24,6 +24,10 @@ dependencies {
     compileOnly 'it.unimi.dsi:fastutil:8.3.1'
 }
 
+compileJava {
+    options.compilerArgs << '-parameters'
+}
+
 publishing {
     repositories {
         def user = System.getenv 'IMPLARIO_REPO_USER'
