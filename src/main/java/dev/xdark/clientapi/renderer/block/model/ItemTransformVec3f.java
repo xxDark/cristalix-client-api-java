@@ -2,14 +2,17 @@ package dev.xdark.clientapi.renderer.block.model;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import dev.xdark.clientapi.resource.ResourceLocation;
 import dev.xdark.clientapi.util.CompileStub;
-import it.unimi.dsi.fastutil.objects.Object2FloatMap;
+import org.lwjgl.util.vector.Vector3f;
 
 @SidedApi(Side.SERVER)
-public interface ItemOverride {
+public interface ItemTransformVec3f {
 
-  ResourceLocation getLocation();
+  Vector3f getRotation();
+
+  Vector3f getTranslation();
+
+  Vector3f getScale();
 
   @SidedApi(Side.SERVER)
   interface Builder {
@@ -18,10 +21,12 @@ public interface ItemOverride {
       throw CompileStub.create();
     }
 
-    Builder location(ResourceLocation location);
+    Builder rotation(Vector3f rotation);
 
-    Builder values(Object2FloatMap<ResourceLocation> values);
+    Builder translation(Vector3f translation);
 
-    ItemOverride build();
+    Builder scale(Vector3f scale);
+
+    ItemTransformVec3f build();
   }
 }

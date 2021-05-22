@@ -8,10 +8,6 @@ import dev.xdark.clientapi.util.EnumFacing;
 @SidedApi(Side.SERVER)
 public interface BlockPartFace {
 
-  static BlockPartFace of(EnumFacing cullFace, int tintIndex, String texture, BlockFaceUV faceUV) {
-    throw CompileStub.create();
-  }
-
   EnumFacing getCullFace();
 
   int getTintIndex();
@@ -19,4 +15,22 @@ public interface BlockPartFace {
   String getTexture();
 
   BlockFaceUV getFaceUV();
+
+  @SidedApi(Side.SERVER)
+  interface Builder {
+
+    static Builder builder() {
+      throw CompileStub.create();
+    }
+
+    Builder cullFace(EnumFacing cullFace);
+
+    Builder tintIndex(int tintIndex);
+
+    Builder texture(String texture);
+
+    Builder blockFaceUV(BlockFaceUV blockFaceUV);
+
+    BlockPartFace build();
+  }
 }

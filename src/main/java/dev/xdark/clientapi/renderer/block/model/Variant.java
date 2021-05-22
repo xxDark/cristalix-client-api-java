@@ -8,11 +8,6 @@ import dev.xdark.clientapi.util.CompileStub;
 @SidedApi(Side.SERVER)
 public interface Variant {
 
-  static Variant of(
-      ResourceLocation modelLocation, ModelRotation rotation, boolean uvLock, int weight) {
-    throw CompileStub.create();
-  }
-
   ResourceLocation getModelLocation();
 
   ModelRotation getModelRotation();
@@ -20,4 +15,22 @@ public interface Variant {
   boolean isUVLocked();
 
   int getWeight();
+
+  @SidedApi(Side.SERVER)
+  interface Builder {
+
+    static Builder builder() {
+      throw CompileStub.create();
+    }
+
+    Builder modelLocation(ResourceLocation modelLocation);
+
+    Builder rotation(ModelRotation rotation);
+
+    Builder uvLock(boolean uvLock);
+
+    Builder weight(int weight);
+
+    Variant build();
+  }
 }

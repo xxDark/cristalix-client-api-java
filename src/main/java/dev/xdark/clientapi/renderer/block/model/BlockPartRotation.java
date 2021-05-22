@@ -9,11 +9,6 @@ import org.lwjgl.util.vector.Vector3f;
 @SidedApi(Side.SERVER)
 public interface BlockPartRotation {
 
-  static BlockPartRotation of(
-      Vector3f original, EnumFacing.Axis axis, float angle, boolean rescale) {
-    throw CompileStub.create();
-  }
-
   Vector3f getOrigin();
 
   EnumFacing.Axis getAxis();
@@ -21,4 +16,22 @@ public interface BlockPartRotation {
   float getAngle();
 
   boolean shouldRescale();
+
+  @SidedApi(Side.SERVER)
+  interface Builder {
+
+    static Builder builder() {
+      throw CompileStub.create();
+    }
+
+    Builder original(Vector3f original);
+
+    Builder axis(EnumFacing.Axis axis);
+
+    Builder angle(float angle);
+
+    Builder rescale(boolean rescale);
+
+    BlockPartRotation build();
+  }
 }

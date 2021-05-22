@@ -18,8 +18,9 @@ import dev.xdark.clientapi.potion.PotionRegistry;
 import dev.xdark.clientapi.render.*;
 import dev.xdark.clientapi.renderer.block.model.ModelManager;
 import dev.xdark.clientapi.renderer.texture.TextureMap;
-import dev.xdark.clientapi.resource.ResourceManager;
+import dev.xdark.clientapi.resource.ReloadableResourceManager;
 import dev.xdark.clientapi.runtime.Platform;
+import dev.xdark.clientapi.settings.SettingsManager;
 import dev.xdark.clientapi.skin.SkinManager;
 import dev.xdark.clientapi.sound.SoundHandler;
 import dev.xdark.clientapi.system.Clipboard;
@@ -42,7 +43,7 @@ public interface ClientApi {
 
   OverlayRenderer overlayRenderer();
 
-  ResourceManager resourceManager();
+  ReloadableResourceManager resourceManager();
 
   Tessellator tessellator();
 
@@ -114,4 +115,6 @@ public interface ClientApi {
 
   @SidedApi(Side.SERVER)
   ModelManager modelManager();
+
+  SettingsManager settingsManager();
 }

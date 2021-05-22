@@ -80,4 +80,10 @@ public interface Minecraft extends Executor, ThreadListener {
 
   @SidedApi(Side.SERVER)
   void displayScreen(Screen screen);
+
+  @SidedApi(Side.SERVER)
+  void refreshResources();
+
+  @SidedApi(Side.SERVER)
+  void scheduleResourcesRefresh();
 }

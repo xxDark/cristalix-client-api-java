@@ -11,15 +11,6 @@ import java.util.Map;
 @SidedApi(Side.SERVER)
 public interface BlockPart {
 
-  static BlockPart of(
-      Vector3f from,
-      Vector3f to,
-      Map<EnumFacing, BlockPartFace> faces,
-      BlockPartRotation partRotation,
-      boolean shading) {
-    throw CompileStub.create();
-  }
-
   Vector3f getFrom();
 
   Vector3f getTo();
@@ -29,4 +20,24 @@ public interface BlockPart {
   BlockPartRotation getPartRotation();
 
   boolean isShading();
+
+  @SidedApi(Side.SERVER)
+  interface Builder {
+
+    static Builder builder() {
+      throw CompileStub.create();
+    }
+
+    Builder from(Vector3f from);
+
+    Builder to(Vector3f to);
+
+    Builder faces(Map<EnumFacing, BlockPartFace> faces);
+
+    Builder rotation(BlockPartRotation rotation);
+
+    Builder shading(boolean shading);
+
+    BlockPart build();
+  }
 }

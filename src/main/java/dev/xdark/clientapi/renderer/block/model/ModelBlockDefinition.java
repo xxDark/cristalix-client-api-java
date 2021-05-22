@@ -12,14 +12,6 @@ import java.util.Set;
 @SidedApi(Side.SERVER)
 public interface ModelBlockDefinition {
 
-  static ModelBlockDefinition of(Map<String, VariantList> variants, Multipart multipart) {
-    throw CompileStub.create();
-  }
-
-  static ModelBlockDefinition of(List<ModelBlockDefinition> definitions) {
-    throw CompileStub.create();
-  }
-
   boolean hasVariant(String name);
 
   VariantList getVariant(String name);
@@ -29,4 +21,20 @@ public interface ModelBlockDefinition {
   boolean hasMultipartData();
 
   Multipart getMultipartData();
+
+  @SidedApi(Side.SERVER)
+  interface Builder {
+
+    static Builder builder() {
+      throw CompileStub.create();
+    }
+
+    Builder variants(Map<String, VariantList> variants);
+
+    Builder multipart(Multipart multipart);
+
+    Builder definitions(List<ModelBlockDefinition> definitions);
+
+    ModelBlockDefinition build();
+  }
 }

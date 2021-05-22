@@ -12,16 +12,6 @@ import java.util.Map;
 
 @SidedApi(Side.SERVER)
 public interface ModelBlock {
-  static ModelBlock of(
-      ResourceLocation parent,
-      List<BlockPart> elements,
-      Map<String, String> textures,
-      boolean ambientOcclusion,
-      boolean gui3d,
-      ItemCameraTransforms cameraTransforms,
-      List<ItemOverride> overrides) {
-    throw CompileStub.create();
-  }
 
   List<BlockPart> getElements();
 
@@ -44,4 +34,28 @@ public interface ModelBlock {
   ModelBlock getRootModel();
 
   ItemCameraTransforms getAllTransforms();
+
+  @SidedApi(Side.SERVER)
+  interface Builder {
+
+    static Builder builder() {
+      throw CompileStub.create();
+    }
+
+    Builder parent(ResourceLocation parent);
+
+    Builder elements(List<BlockPart> elements);
+
+    Builder textures(Map<String, String> textures);
+
+    Builder ambientOcclusion(boolean ambientOcclusion);
+
+    Builder gui3d(boolean gui3d);
+
+    Builder cameraTransforms(ItemCameraTransforms cameraTransforms);
+
+    Builder overrides(List<ItemOverride> overrides);
+
+    ModelBlock build();
+  }
 }
