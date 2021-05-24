@@ -1,5 +1,6 @@
 package dev.xdark.clientapi;
 
+import dev.xdark.clientapi.biome.BiomeRegistry;
 import dev.xdark.clientapi.block.BlockRegistry;
 import dev.xdark.clientapi.chat.Chat;
 import dev.xdark.clientapi.discord.DiscordRPC;
@@ -117,4 +118,7 @@ public interface ClientApi {
   ModelManager modelManager();
 
   SettingsManager settingsManager();
+
+  @SidedApi(Side.SERVER)
+  BiomeRegistry biomeRegistry();
 }
