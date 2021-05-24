@@ -5,7 +5,7 @@ import static dev.xdark.clientapi.util.SideEffects.objectValue;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 
-@SidedApi(Side.SERVER)
+@SidedApi(Side.BOTH)
 public interface GameMode {
 
   GameMode SURVIVAL = objectValue(),

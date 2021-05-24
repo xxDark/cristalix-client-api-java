@@ -46,7 +46,6 @@ public interface Minecraft extends Executor, ThreadListener {
 
   Session getSession();
 
-  @SidedApi(Side.SERVER)
   PlayerController getPlayerController();
 
   @SidedApi(Side.SERVER)
