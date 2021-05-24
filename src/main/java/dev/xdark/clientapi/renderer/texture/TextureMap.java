@@ -5,10 +5,11 @@ import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.render.VertexFormat;
 import dev.xdark.clientapi.renderer.block.model.BakedQuad;
 import dev.xdark.clientapi.resource.ResourceLocation;
+import dev.xdark.clientapi.texture.Texture;
 import dev.xdark.clientapi.util.EnumFacing;
 
 @SidedApi(Side.SERVER)
-public interface TextureMap {
+public interface TextureMap extends Texture {
 
   boolean generateMipmaps(TextureAtlasSprite atlasSprite);
 
