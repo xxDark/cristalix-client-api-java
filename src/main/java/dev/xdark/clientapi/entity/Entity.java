@@ -8,6 +8,7 @@ import dev.xdark.clientapi.item.ItemStack;
 import dev.xdark.clientapi.math.AxisAlignedBB;
 import dev.xdark.clientapi.math.RayTraceResult;
 import dev.xdark.clientapi.math.Vec3d;
+import dev.xdark.clientapi.resource.ResourceLocation;
 import dev.xdark.clientapi.text.HoverEvent;
 import dev.xdark.clientapi.text.Text;
 import dev.xdark.clientapi.util.EnumFacing;
@@ -244,4 +245,8 @@ public interface Entity {
   OptionalInt getGlowColor();
 
   void clearGlowColor();
+
+  ResourceLocation getRenderTexture();
+
+  void setRenderTexture(ResourceLocation location);
 }

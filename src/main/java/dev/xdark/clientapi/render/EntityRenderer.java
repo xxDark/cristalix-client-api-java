@@ -2,6 +2,7 @@ package dev.xdark.clientapi.render;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.renderer.culling.Camera;
 
 @SidedApi(Side.SERVER)
 public interface EntityRenderer {
@@ -34,4 +35,6 @@ public interface EntityRenderer {
       float viewerPitch,
       boolean isThirdPersonFrontal,
       boolean isSneaking);
+
+  Camera getCamera();
 }

@@ -1,5 +1,6 @@
 package dev.xdark.clientapi.game;
 
+import dev.xdark.clientapi.renderer.entity.RenderManager;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.entity.Entity;
@@ -9,7 +10,6 @@ import dev.xdark.clientapi.math.RayTraceResult;
 import dev.xdark.clientapi.particle.ParticleManager;
 import dev.xdark.clientapi.render.EntityRenderer;
 import dev.xdark.clientapi.render.RenderGlobal;
-import dev.xdark.clientapi.render.RenderManager;
 import dev.xdark.clientapi.sound.SoundHandler;
 import dev.xdark.clientapi.util.ThreadListener;
 import dev.xdark.clientapi.world.World;
@@ -55,7 +55,7 @@ public interface Minecraft extends Executor, ThreadListener {
   RenderGlobal getRenderGlobal();
 
   @SidedApi(Side.SERVER)
-  RenderManager getRenderManager();
+  RenderManager getEntityRenderManager();
 
   ScreenshotHelper getScreenshotHelper();
 
