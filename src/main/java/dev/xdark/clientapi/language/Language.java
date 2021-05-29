@@ -4,13 +4,13 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 
 @SidedApi(Side.SERVER)
-public interface Language {
+public interface Language extends Comparable<Language> {
 
-    String getCode();
+  String getCode();
 
-    String getRegion();
+  String getRegion();
 
-    String getName();
+  String getName();
 
-    boolean isBidirectional();
+  boolean isBidirectional();
 }
