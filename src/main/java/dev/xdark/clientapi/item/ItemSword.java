@@ -4,7 +4,9 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 
 @SidedApi(Side.SERVER)
-public interface ItemCreateHandler {
+public interface ItemSword extends Item {
 
-    void onCreated(ItemStack stack);
+  float getAttackDamage();
+
+  ToolMaterial getToolMaterial();
 }

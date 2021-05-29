@@ -4,7 +4,7 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 
 @SidedApi(Side.SERVER)
-public interface ItemCreateHandler {
+public interface ItemRepairHandler {
 
-    void onCreated(ItemStack stack);
+  boolean isRepairableWith(ItemStack toRepair, ItemStack stack);
 }

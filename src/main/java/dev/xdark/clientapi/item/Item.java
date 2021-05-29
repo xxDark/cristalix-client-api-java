@@ -7,8 +7,13 @@ import dev.xdark.clientapi.gui.CreativeTab;
 import dev.xdark.clientapi.resource.ResourceLocation;
 import dev.xdark.clientapi.util.CompileStub;
 
+import java.util.UUID;
+
+import static dev.xdark.clientapi.util.SideEffects.objectValue;
+
 @SidedApi(Side.SERVER)
 public interface Item {
+  UUID ATTACK_DAMAGE_MODIFIER = objectValue(), ATTACK_SPEED_MODIFIER = objectValue();
 
   static Item of(int id) {
     throw CompileStub.create();
@@ -109,6 +114,10 @@ public interface Item {
 
     Builder enchantHandler(ItemEnchantHandler enchantHandler);
 
+    Builder attributeHandler(ItemAttributeHandler attributeHandler);
+
+    Builder repairHandler(ItemRepairHandler repairHandler);
+
     Builder creativeTab(CreativeTab creativeTab);
 
     Builder property(ResourceLocation location, ItemProperty property);
@@ -124,6 +133,8 @@ public interface Item {
     Builder rotateAroundWhenRendering(boolean rotateAroundWhenRendering);
 
     Builder containerItem(Item item);
+
+    Builder translationKey(String translationKey);
 
     Item build();
   }

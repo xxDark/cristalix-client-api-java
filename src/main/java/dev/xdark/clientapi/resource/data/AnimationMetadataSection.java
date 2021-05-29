@@ -1,11 +1,12 @@
 package dev.xdark.clientapi.resource.data;
 
-import it.unimi.dsi.fastutil.ints.IntSet;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import it.unimi.dsi.fastutil.ints.IntSet;
 
 @SidedApi(Side.SERVER)
 public interface AnimationMetadataSection extends MetadataSection {
+
   int getFrameHeight();
 
   int getFrameWidth();
