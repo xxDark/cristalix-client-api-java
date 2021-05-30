@@ -2,6 +2,7 @@ package dev.xdark.clientapi.world;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.block.BlockAccess;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityWeatherEffect;
 import dev.xdark.clientapi.sound.SoundCategory;
@@ -11,7 +12,7 @@ import dev.xdark.clientapi.util.ParticleType;
 import dev.xdark.clientapi.world.chunk.ChunkProvider;
 
 @SidedApi(Side.BOTH)
-public interface World {
+public interface World extends BlockAccess {
 
   boolean canSeeSky(int x, int y, int z);
 
