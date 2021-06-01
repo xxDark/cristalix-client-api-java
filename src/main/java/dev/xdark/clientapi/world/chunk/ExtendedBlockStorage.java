@@ -2,7 +2,7 @@ package dev.xdark.clientapi.world.chunk;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import dev.xdark.clientapi.block.BlockState;
+import dev.xdark.clientapi.block.state.BlockState;
 
 @SidedApi(Side.SERVER)
 public interface ExtendedBlockStorage {

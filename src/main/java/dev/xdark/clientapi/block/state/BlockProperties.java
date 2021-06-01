@@ -1,7 +1,10 @@
-package dev.xdark.clientapi.block;
+package dev.xdark.clientapi.block.state;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.world.BlockAccess;
+import dev.xdark.clientapi.block.MapColor;
+import dev.xdark.clientapi.block.material.PushReaction;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityPlayer;
 import dev.xdark.clientapi.math.AxisAlignedBB;

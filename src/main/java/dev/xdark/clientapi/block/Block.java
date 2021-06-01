@@ -2,6 +2,11 @@ package dev.xdark.clientapi.block;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.block.material.Material;
+import dev.xdark.clientapi.block.material.PushReaction;
+import dev.xdark.clientapi.block.state.BlockFaceShape;
+import dev.xdark.clientapi.block.state.BlockState;
+import dev.xdark.clientapi.block.state.BlockStateContainer;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityLivingBase;
 import dev.xdark.clientapi.entity.EntityPlayer;
@@ -13,6 +18,7 @@ import dev.xdark.clientapi.math.RayTraceResult;
 import dev.xdark.clientapi.math.Vec3d;
 import dev.xdark.clientapi.resource.ResourceLocation;
 import dev.xdark.clientapi.util.*;
+import dev.xdark.clientapi.world.BlockAccess;
 import dev.xdark.clientapi.world.World;
 
 import java.util.List;

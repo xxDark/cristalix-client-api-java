@@ -5,7 +5,7 @@ import static dev.xdark.clientapi.util.SideEffects.objectValue;
 import com.google.common.base.Optional;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import dev.xdark.clientapi.block.BlockState;
+import dev.xdark.clientapi.block.state.BlockState;
 import dev.xdark.clientapi.item.ItemStack;
 import dev.xdark.clientapi.math.BlockPos;
 import dev.xdark.clientapi.math.Rotations;

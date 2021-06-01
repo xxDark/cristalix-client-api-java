@@ -10,6 +10,7 @@ import dev.xdark.clientapi.inventory.InventoryPlayer;
 import dev.xdark.clientapi.item.ItemStack;
 import dev.xdark.clientapi.nbt.NBTTagCompound;
 import dev.xdark.clientapi.util.EnumHandSide;
+import dev.xdark.clientapi.util.FoodStats;
 
 @SidedApi(Side.BOTH)
 public interface EntityPlayer extends EntityLivingBase {
@@ -123,4 +124,6 @@ public interface EntityPlayer extends EntityLivingBase {
 
   @SidedApi(Side.SERVER)
   void setExperience(float experience);
+
+  FoodStats getFoodStats();
 }

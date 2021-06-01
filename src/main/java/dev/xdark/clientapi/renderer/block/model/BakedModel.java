@@ -2,7 +2,7 @@ package dev.xdark.clientapi.renderer.block.model;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import dev.xdark.clientapi.block.BlockState;
+import dev.xdark.clientapi.block.state.BlockState;
 import dev.xdark.clientapi.render.model.ItemCameraTransforms;
 import dev.xdark.clientapi.renderer.texture.TextureAtlasSprite;
 import dev.xdark.clientapi.util.EnumFacing;

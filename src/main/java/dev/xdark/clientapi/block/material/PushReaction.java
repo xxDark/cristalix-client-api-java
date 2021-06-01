@@ -1,4 +1,4 @@
-package dev.xdark.clientapi.block;
+package dev.xdark.clientapi.block.material;
 
 import static dev.xdark.clientapi.util.SideEffects.objectValue;
 import dev.xdark.clientapi.Side;

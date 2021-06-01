@@ -1,7 +1,10 @@
-package dev.xdark.clientapi.block;
+package dev.xdark.clientapi.block.state;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.block.Block;
+import dev.xdark.clientapi.block.material.Material;
+import dev.xdark.clientapi.block.properties.Property;
 import dev.xdark.clientapi.util.CompileStub;
 import java.util.Collection;
 import java.util.Map;

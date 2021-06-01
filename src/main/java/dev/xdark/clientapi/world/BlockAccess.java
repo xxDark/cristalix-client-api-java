@@ -1,8 +1,9 @@
-package dev.xdark.clientapi.block;
+package dev.xdark.clientapi.world;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.biome.Biome;
+import dev.xdark.clientapi.block.state.BlockState;
 import dev.xdark.clientapi.tile.TileEntity;
 
 @SidedApi(Side.BOTH)

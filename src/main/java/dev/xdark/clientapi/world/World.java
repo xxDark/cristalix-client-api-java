@@ -2,7 +2,6 @@ package dev.xdark.clientapi.world;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import dev.xdark.clientapi.block.BlockAccess;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityWeatherEffect;
 import dev.xdark.clientapi.sound.SoundCategory;

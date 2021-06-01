@@ -2,7 +2,7 @@ package dev.xdark.clientapi.renderer.block.model.multipart;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import dev.xdark.clientapi.block.BlockStateContainer;
+import dev.xdark.clientapi.block.state.BlockStateContainer;
 import dev.xdark.clientapi.renderer.block.model.VariantList;
 import dev.xdark.clientapi.util.CompileStub;
 

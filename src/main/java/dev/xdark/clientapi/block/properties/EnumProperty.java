@@ -1,4 +1,4 @@
-package dev.xdark.clientapi.block;
+package dev.xdark.clientapi.block.properties;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
