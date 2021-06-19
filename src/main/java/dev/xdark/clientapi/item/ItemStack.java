@@ -3,11 +3,14 @@ package dev.xdark.clientapi.item;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.block.state.BlockState;
+import dev.xdark.clientapi.entity.EntityPlayer;
 import dev.xdark.clientapi.nbt.NBTBase;
 import dev.xdark.clientapi.nbt.NBTTagCompound;
 import dev.xdark.clientapi.nbt.NBTTagList;
 import dev.xdark.clientapi.text.Text;
 import dev.xdark.clientapi.util.CompileStub;
+
+import java.util.List;
 
 @SidedApi(Side.BOTH)
 public interface ItemStack {
@@ -95,4 +98,6 @@ public interface ItemStack {
   void shrink(int quantity);
 
   NBTTagCompound writeToNBT(NBTTagCompound nbt);
+
+  List<String> getTooltip(EntityPlayer player, TooltipFlag flag);
 }

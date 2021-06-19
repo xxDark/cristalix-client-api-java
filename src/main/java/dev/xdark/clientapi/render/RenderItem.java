@@ -14,8 +14,7 @@ public interface RenderItem {
 
   void renderItemAndEffectIntoGUI(ItemStack stack, int x, int y);
 
-  void renderItemOverlayIntoGUI(
-      FontRenderer fr, ItemStack stack, int x, int y, String text);
+  void renderItemOverlayIntoGUI(FontRenderer fr, ItemStack stack, int x, int y, String text);
 
   void renderItem(ItemStack stack, ItemCameraTransforms.Type type);
 

@@ -101,4 +101,9 @@ public interface World extends BlockAccess {
 
   @SidedApi(Side.SERVER)
   Entity getEntity(int id);
+
+  @SidedApi(Side.SERVER)
+  void markBlockRangeForRenderUpdate(int x1, int y1, int z1, int x2, int y2, int z2);
+
+  int getHeight();
 }

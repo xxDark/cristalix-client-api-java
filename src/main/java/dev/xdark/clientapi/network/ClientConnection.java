@@ -3,13 +3,12 @@ package dev.xdark.clientapi.network;
 import com.mojang.authlib.GameProfile;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import dev.xdark.feder.network.Packet;
 import io.netty.buffer.ByteBuf;
 import java.util.Collection;
 import java.util.UUID;
 
 @SidedApi(Side.BOTH)
-public interface ClientConnection {
+public interface ClientConnection extends NetHandler {
 
   @SidedApi(Side.SERVER)
   void addPlayerInfo(NetworkPlayerInfo info);
@@ -33,5 +32,5 @@ public interface ClientConnection {
   NetworkPlayerInfo newPlayerInfo(GameProfile profile);
 
   @SidedApi(Side.SERVER)
-  void fireInboundPacket(Packet packet);
+  void sendPacket(Packet<?> packet);
 }

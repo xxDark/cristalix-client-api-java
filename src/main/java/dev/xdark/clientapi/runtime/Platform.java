@@ -9,10 +9,12 @@ public final class Platform {
 
   private final String name;
   private final String version;
+  private final String arch;
 
-  public Platform(String name, String version) {
+  public Platform(String name, String version, String arch) {
     this.name = name;
     this.version = version;
+    this.arch = arch;
   }
 
   public String getName() {
@@ -23,35 +25,42 @@ public final class Platform {
     return version;
   }
 
+  public String getArch() {
+    return arch;
+  }
+
   @Override
   public boolean equals(Object o) {
-    if (this == o) {
-      return true;
-    }
-    if (!(o instanceof Platform)) {
-      return false;
-    }
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
 
     Platform platform = (Platform) o;
 
-    if (!Objects.equals(name, platform.name)) {
-      return false;
-    }
-    return Objects.equals(version, platform.version);
+    if (!name.equals(platform.name)) return false;
+    if (!version.equals(platform.version)) return false;
+    return arch.equals(platform.arch);
   }
 
   @Override
   public int hashCode() {
-    int result = name != null ? name.hashCode() : 0;
-    result = 31 * result + (version != null ? version.hashCode() : 0);
+    int result = name.hashCode();
+    result = 31 * result + version.hashCode();
+    result = 31 * result + arch.hashCode();
     return result;
   }
 
   @Override
   public String toString() {
-    return "Platform{" +
-        "name='" + name + '\'' +
-        ", version='" + version + '\'' +
-        '}';
+    return "Platform{"
+        + "name='"
+        + name
+        + '\''
+        + ", version='"
+        + version
+        + '\''
+        + ", arch='"
+        + arch
+        + '\''
+        + '}';
   }
 }
