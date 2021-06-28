@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.function.Predicate;
 
 @SidedApi(Side.SERVER)
-public interface EnumProperty<E extends Enum<E>> extends Property<E> {
+public interface EnumProperty<E extends Enum<E> & StringSerializable> extends Property<E> {
 
   static <E extends Enum<E> & StringSerializable> EnumProperty<E> create(
       String name, Class<E> type) {

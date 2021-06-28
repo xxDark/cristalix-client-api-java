@@ -29,6 +29,4 @@ public interface BlockState extends BlockProperties {
   <T extends Comparable<T>> BlockState cycleProperty(Property<T> property);
 
   Map<Property<?>, Comparable<?>> getProperties();
-
-  Material getMaterial();
 }

@@ -26,4 +26,6 @@ public interface Chunk {
   boolean isEmpty();
 
   World getWorld();
+
+
 }

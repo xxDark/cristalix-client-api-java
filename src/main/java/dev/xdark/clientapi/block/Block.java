@@ -10,6 +10,7 @@ import dev.xdark.clientapi.block.state.BlockStateContainer;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityLivingBase;
 import dev.xdark.clientapi.entity.EntityPlayer;
+import dev.xdark.clientapi.gui.CreativeTab;
 import dev.xdark.clientapi.item.ItemStack;
 import dev.xdark.clientapi.item.TooltipFlag;
 import dev.xdark.clientapi.math.AxisAlignedBB;
@@ -35,73 +36,149 @@ public interface Block {
     throw CompileStub.create();
   }
 
-  int getId();
+  default int getId() {
+    throw CompileStub.create();
+  }
 
-  ResourceLocation getLocation();
+  default ResourceLocation getLocation() {
+    throw CompileStub.create();
+  }
 
-  BlockState getDefaultState();
+  default BlockState getDefaultState() {
+    throw CompileStub.create();
+  }
 
-  BlockState getStateFromMeta(int meta);
+  default BlockState getStateFromMeta(int meta) {
+    throw CompileStub.create();
+  }
 
-  int getMetaFromState(BlockState state);
+  default int getMetaFromState(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean hasTileEntity();
+  default boolean hasTileEntity() {
+    throw CompileStub.create();
+  }
 
-  String getLocalizedName();
+  default String getLocalizedName() {
+    throw CompileStub.create();
+  }
 
-  String getTranslationKey();
+  default String getTranslationKey() {
+    throw CompileStub.create();
+  }
 
-  boolean isTopSolid(BlockState state);
+  default boolean isTopSolid(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean isFullBlock(BlockState state);
+  default boolean isFullBlock(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  int getLightOpacity(BlockState state);
+  default int getLightOpacity(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean isTranslucent(BlockState state);
+  default boolean isTranslucent(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  int getLightValue(BlockState state);
+  default int getLightValue(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean getUseNeighborBrightness(BlockState state);
+  default boolean getUseNeighborBrightness(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  Material getMaterial(BlockState state);
+  default Material getMaterial(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  MapColor getMapColor(BlockState state, BlockAccess blockAccess, BlockPos pos);
+  default MapColor getMapColor(BlockState state, BlockAccess blockAccess, BlockPos pos) {
+    throw CompileStub.create();
+  }
 
-  BlockState getActualState(BlockState state, BlockAccess blockAccess, int x, int y, int z);
+  default BlockState getActualState(
+      BlockState state, BlockAccess blockAccess, int x, int y, int z) {
+    throw CompileStub.create();
+  }
 
-  BlockState withRotation(BlockState state, Rotation rotation);
+  default BlockState withRotation(BlockState state, Rotation rotation) {
+    throw CompileStub.create();
+  }
 
-  BlockState withMirror(BlockState state, Mirror mirror);
+  default BlockState withMirror(BlockState state, Mirror mirror) {
+    throw CompileStub.create();
+  }
 
-  boolean isBlockNormalCube(BlockState state);
+  default boolean isBlockNormalCube(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean isNormalCube(BlockState state);
+  default boolean isNormalCube(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean causesSuffocation(BlockState state);
+  default boolean causesSuffocation(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean isFullCube(BlockState state);
+  default boolean isFullCube(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean hasCustomBreakingProgress(BlockState state);
+  default boolean hasCustomBreakingProgress(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean isPassable(BlockAccess blockAccess, int x, int y, int z);
+  default boolean isPassable(BlockAccess blockAccess, int x, int y, int z) {
+    throw CompileStub.create();
+  }
 
-  float getBlockHardness(BlockState state, World world, int x, int y, int z);
+  default BlockRenderType getRenderType(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean tickRandomly();
+  default boolean isReplaceable(BlockAccess blockAccess, BlockPos pos) {
+    throw CompileStub.create();
+  }
 
-  AxisAlignedBB getBoundingBox(BlockState state, BlockAccess blockAccess, int x, int y, int z);
+  default float getBlockHardness(BlockState state, World world, int x, int y, int z) {
+    throw CompileStub.create();
+  }
 
-  int getPackedLightmapCoords(BlockState state, BlockAccess blockAccess, int x, int y, int z);
+  default boolean tickRandomly() {
+    throw CompileStub.create();
+  }
 
-  boolean shouldSideBeRendered(
-      BlockState state, BlockAccess blockAccess, int x, int y, int z, EnumFacing facing);
+  default AxisAlignedBB getBoundingBox(
+      BlockState state, BlockAccess blockAccess, int x, int y, int z) {
+    throw CompileStub.create();
+  }
 
-  BlockFaceShape getBlockFaceShape(
-      BlockAccess blockAccess, BlockState state, int x, int y, int z, EnumFacing facing);
+  default int getPackedLightmapCoords(
+      BlockState state, BlockAccess blockAccess, int x, int y, int z) {
+    throw CompileStub.create();
+  }
 
-  AxisAlignedBB getSelectedBoundingBox(BlockState blockState, World world, int x, int y, int z);
+  default boolean shouldSideBeRendered(
+      BlockState state, BlockAccess blockAccess, int x, int y, int z, EnumFacing facing) {
+    throw CompileStub.create();
+  }
 
-  void addCollisionBoxToList(
+  default BlockFaceShape getBlockFaceShape(
+      BlockAccess blockAccess, BlockState state, int x, int y, int z, EnumFacing facing) {
+    throw CompileStub.create();
+  }
+
+  default AxisAlignedBB getSelectedBoundingBox(
+      BlockState blockState, World world, int x, int y, int z) {
+    throw CompileStub.create();
+  }
+
+  default void addCollisionBoxToList(
       BlockState state,
       World world,
       int x,
@@ -110,7 +187,9 @@ public interface Block {
       AxisAlignedBB entityBox,
       List<AxisAlignedBB> collidingBoxes,
       Entity entity,
-      boolean isActualState);
+      boolean isActualState) {
+    throw CompileStub.create();
+  }
 
   static void addCollisionBoxToList(
       int x,
@@ -122,34 +201,76 @@ public interface Block {
     throw CompileStub.create();
   }
 
-  AxisAlignedBB getCollisionBoundingBox(
-      BlockState state, BlockAccess blockAccess, int x, int y, int z);
+  default AxisAlignedBB getCollisionBoundingBox(
+      BlockState state, BlockAccess blockAccess, int x, int y, int z) {
+    throw CompileStub.create();
+  }
 
-  boolean isOpaqueCube(BlockState state);
+  default boolean isOpaqueCube(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  boolean canCollideCheck(BlockState state, boolean hitIfLiquid);
+  default boolean canCollideCheck(BlockState state, boolean hitIfLiquid) {
+    throw CompileStub.create();
+  }
 
-  boolean isCollidable();
+  default boolean isCollidable() {
+    throw CompileStub.create();
+  }
 
-  void randomDisplayTick(BlockState blockState, World world, int x, int y, int z, Random random);
+  default void randomDisplayTick(
+      BlockState blockState, World world, int x, int y, int z, Random random) {
+    throw CompileStub.create();
+  }
 
-  int tickRate(World world);
+  default int tickRate(World world) {
+    throw CompileStub.create();
+  }
 
   float getPlayerRelativeBlockHardness(
       BlockState state, EntityPlayer player, World world, int x, int y, int z);
 
-  int damageDropped(BlockState state);
+  default int damageDropped(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  RayTraceResult collisionRayTrace(
-      BlockState blockState, World world, int x, int y, int z, Vec3d start, Vec3d end);
+  default RayTraceResult collisionRayTrace(
+      BlockState blockState, World world, int x, int y, int z, Vec3d start, Vec3d end) {
+    throw CompileStub.create();
+  }
 
-  BlockRenderLayer getRenderLayer();
+  default BlockRenderLayer getRenderLayer() {
+    throw CompileStub.create();
+  }
 
-  boolean canPlaceBlockOnSide(World world, int x, int y, int z, EnumFacing facing);
+  default boolean canPlaceBlockOnSide(World world, int x, int y, int z, EnumFacing facing) {
+    throw CompileStub.create();
+  }
 
-  boolean canPlaceBlockAt(World world, int x, int y, int z);
+  default boolean canPlaceBlockAt(World world, int x, int y, int z) {
+    throw CompileStub.create();
+  }
 
-  BlockState getStateForPlacement(
+  default boolean onBlockActivated(
+      World world,
+      int x,
+      int y,
+      int z,
+      BlockState state,
+      EntityPlayer player,
+      EnumHand hand,
+      EnumFacing side,
+      float hitX,
+      float hitY,
+      float hitZ) {
+    throw CompileStub.create();
+  }
+
+  default void onEntityWalk(World world, int x, int y, int z, Entity entity) {
+    throw CompileStub.create();
+  }
+
+  default BlockState getStateForPlacement(
       World world,
       int x,
       int y,
@@ -159,21 +280,106 @@ public interface Block {
       float hitY,
       float hitZ,
       int meta,
-      EntityLivingBase placer);
+      EntityLivingBase placer) {
+    throw CompileStub.create();
+  }
 
-  Vec3d modifyAcceleration(World world, int x, int y, int z, Entity entity, Vec3d acceleration);
+  default void onBlockClicked(World world, int x, int y, int z, EntityPlayer player) {
+    throw CompileStub.create();
+  }
 
-  PushReaction getPushReaction(BlockState state);
+  default Vec3d modifyAcceleration(
+      World world, int x, int y, int z, Entity entity, Vec3d acceleration) {
+    throw CompileStub.create();
+  }
 
-  float getAmbientOcclusionLightValue(BlockState state);
+  default int getWeakPower(
+      BlockState state, BlockAccess blockAccess, int x, int y, int z, EnumFacing facing) {
+    throw CompileStub.create();
+  }
 
-  ItemStack getItem(World world, int x, int y, int z, BlockState state);
+  default boolean canProvidePower(BlockState state) {
+    throw CompileStub.create();
+  }
 
-  BlockStateContainer getBlockState();
+  default void onEntityCollision(
+      World world, int x, int y, int z, BlockState state, Entity entity) {
+    throw CompileStub.create();
+  }
 
-  OffsetType getOffsetType();
+  default int getStrongPower(
+      BlockState state, BlockAccess blockAccess, int x, int y, int z, EnumFacing facing) {
+    throw CompileStub.create();
+  }
 
-  Vec3d getOffset(BlockState state, BlockAccess blockAccess, int x, int y, int z);
+  default void onBlockPlacedBy(
+      World world, BlockPos pos, BlockState state, EntityLivingBase entity, ItemStack stack) {
+    throw CompileStub.create();
+  }
 
-  void addInformation(ItemStack stack, World world, List<String> info, TooltipFlag tooltipFlag);
+  default boolean eventReceived(
+      BlockState state, World world, int x, int y, int z, int id, int param) {
+    throw CompileStub.create();
+  }
+
+  default PushReaction getPushReaction(BlockState state) {
+    throw CompileStub.create();
+  }
+
+  default float getAmbientOcclusionLightValue(BlockState state) {
+    throw CompileStub.create();
+  }
+
+  default void onFallenUpon(World world, int x, int y, int z, Entity entity, float fallDistance) {
+    throw CompileStub.create();
+  }
+
+  default void onLanded(World world, Entity entity) {
+    throw CompileStub.create();
+  }
+
+  default ItemStack getItem(World world, int x, int y, int z, BlockState state) {
+    throw CompileStub.create();
+  }
+
+  default void getSubBlocks(CreativeTab tab, List<ItemStack> stacks) {
+    throw CompileStub.create();
+  }
+
+  default CreativeTab getCreativeTab() {
+    throw CompileStub.create();
+  }
+
+  default void onBlockHarvested(World world, BlockPos pos, BlockState state, EntityPlayer player) {
+    throw CompileStub.create();
+  }
+
+  default boolean hasComparatorInputOverride(BlockState state) {
+    throw CompileStub.create();
+  }
+
+  default int getComparatorInputOverride(BlockState state, World world, int x, int y, int z) {
+    throw CompileStub.create();
+  }
+
+  default BlockStateContainer createBlockState() {
+    throw CompileStub.create();
+  }
+
+  default BlockStateContainer getBlockState() {
+    throw CompileStub.create();
+  }
+
+  default OffsetType getOffsetType() {
+    throw CompileStub.create();
+  }
+
+  default Vec3d getOffset(BlockState state, BlockAccess blockAccess, int x, int y, int z) {
+    throw CompileStub.create();
+  }
+
+  default void addInformation(
+      ItemStack stack, World world, List<String> info, TooltipFlag tooltipFlag) {
+    throw CompileStub.create();
+  }
 }

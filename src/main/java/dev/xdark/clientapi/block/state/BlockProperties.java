@@ -2,6 +2,7 @@ package dev.xdark.clientapi.block.state;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.block.material.Material;
 import dev.xdark.clientapi.world.BlockAccess;
 import dev.xdark.clientapi.block.MapColor;
 import dev.xdark.clientapi.block.material.PushReaction;
@@ -20,6 +21,8 @@ import java.util.List;
 
 @SidedApi(Side.SERVER)
 public interface BlockProperties {
+
+  Material getMaterial();
 
   boolean isFullBlock();
 

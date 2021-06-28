@@ -2,6 +2,7 @@ package dev.xdark.clientapi.world;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.biome.Biome;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityWeatherEffect;
 import dev.xdark.clientapi.sound.SoundCategory;
@@ -106,4 +107,7 @@ public interface World extends BlockAccess {
   void markBlockRangeForRenderUpdate(int x1, int y1, int z1, int x2, int y2, int z2);
 
   int getHeight();
+
+  @SidedApi(Side.SERVER)
+  void setBiome(int x, int z, Biome biome);
 }
