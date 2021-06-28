@@ -27,5 +27,7 @@ public interface Chunk {
 
   World getWorld();
 
+  byte[] getBiomeArray();
 
+  void setBiomeArray(byte[] biomeArray);
 }
