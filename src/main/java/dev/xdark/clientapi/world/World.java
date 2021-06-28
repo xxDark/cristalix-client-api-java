@@ -9,6 +9,7 @@ import dev.xdark.clientapi.sound.SoundCategory;
 import dev.xdark.clientapi.sound.SoundEvent;
 import dev.xdark.clientapi.tile.TileEntity;
 import dev.xdark.clientapi.util.ParticleType;
+import dev.xdark.clientapi.world.chunk.Chunk;
 import dev.xdark.clientapi.world.chunk.ChunkProvider;
 
 @SidedApi(Side.BOTH)
@@ -110,4 +111,10 @@ public interface World extends BlockAccess {
 
   @SidedApi(Side.SERVER)
   void setBiome(int x, int z, Biome biome);
+
+  @SidedApi(Side.SERVER)
+  Chunk getChunk(int x, int z);
+
+  @SidedApi(Side.SERVER)
+  boolean isChunkGeneratedAt(int x, int z);
 }
