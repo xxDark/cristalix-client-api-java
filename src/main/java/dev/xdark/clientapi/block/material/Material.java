@@ -62,6 +62,8 @@ public interface Material {
 
   MapColor getMapColor();
 
+  PushReaction getPushReaction();
+
   @SidedApi(Side.SERVER)
   interface Builder {
 

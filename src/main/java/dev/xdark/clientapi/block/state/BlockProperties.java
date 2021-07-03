@@ -3,6 +3,7 @@ package dev.xdark.clientapi.block.state;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.block.material.Material;
+import dev.xdark.clientapi.math.BlockPos;
 import dev.xdark.clientapi.world.BlockAccess;
 import dev.xdark.clientapi.block.MapColor;
 import dev.xdark.clientapi.block.material.PushReaction;
@@ -44,7 +45,7 @@ public interface BlockProperties {
 
   boolean isTopSolid();
 
-  MapColor getMapColor(BlockAccess blockAccess, int x, int y, int z);
+  MapColor getMapColor(BlockAccess blockAccess, BlockPos pos);
 
   BlockState withRotation(Rotation rotation);
 
