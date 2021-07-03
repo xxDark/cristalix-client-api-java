@@ -4,7 +4,6 @@ import static dev.xdark.clientapi.util.SideEffects.objectValue;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
-import dev.xdark.clientapi.block.MapColor;
 import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.SERVER)

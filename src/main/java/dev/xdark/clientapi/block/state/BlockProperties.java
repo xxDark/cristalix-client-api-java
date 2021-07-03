@@ -5,7 +5,7 @@ import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.block.material.Material;
 import dev.xdark.clientapi.math.BlockPos;
 import dev.xdark.clientapi.world.BlockAccess;
-import dev.xdark.clientapi.block.MapColor;
+import dev.xdark.clientapi.block.material.MapColor;
 import dev.xdark.clientapi.block.material.PushReaction;
 import dev.xdark.clientapi.entity.Entity;
 import dev.xdark.clientapi.entity.EntityPlayer;

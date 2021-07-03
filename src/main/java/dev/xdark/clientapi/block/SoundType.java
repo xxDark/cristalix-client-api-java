@@ -54,7 +54,7 @@ public interface SoundType {
 
     Builder hitSound(SoundEvent event);
 
-    SoundEvent fallSound(SoundEvent event);
+    Builder fallSound(SoundEvent event);
 
     SoundType build();
   }
