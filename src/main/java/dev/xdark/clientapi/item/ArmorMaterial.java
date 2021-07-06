@@ -46,11 +46,13 @@ public interface ArmorMaterial {
 
     Builder maxDamageFactor(int maxDamageFactor);
 
-    Builder damageReduction(float[] damageReduction);
+    Builder damageReduction(int[] damageReduction);
 
     Builder maxDamage(int[] maxDamage);
 
     Builder enchantability(int enchantability);
+
+    Builder equipSound(SoundEvent equipSound);
 
     Builder repairItem(Item repairItem);
 
