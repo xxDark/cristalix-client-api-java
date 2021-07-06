@@ -249,4 +249,8 @@ public interface Entity {
   ResourceLocation getRenderTexture();
 
   void setRenderTexture(ResourceLocation location);
+
+  void enableRidingAnimation();
+
+  void disableRidingAnimation();
 }

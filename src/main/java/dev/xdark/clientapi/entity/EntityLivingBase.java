@@ -6,8 +6,10 @@ import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.inventory.EntityEquipmentSlot;
 import dev.xdark.clientapi.item.ItemStack;
+import dev.xdark.clientapi.math.BlockPos;
 import dev.xdark.clientapi.potion.Potion;
 import dev.xdark.clientapi.potion.PotionEffect;
+import dev.xdark.clientapi.util.EnumFacing;
 import dev.xdark.clientapi.util.EnumHand;
 import dev.xdark.clientapi.util.EnumHandSide;
 import java.util.Collection;
@@ -126,4 +128,8 @@ public interface EntityLivingBase extends Entity {
   void setAbsorptionAmount(float absorptionAmount);
 
   boolean attemptTeleport(double x, double y, double z);
+
+  void enableSleepAnimation(BlockPos pos, EnumFacing facing);
+
+  void disableSleepAnimation();
 }
