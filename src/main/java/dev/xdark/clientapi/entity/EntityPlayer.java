@@ -127,5 +127,7 @@ public interface EntityPlayer extends EntityLivingBase {
 
   FoodStats getFoodStats();
 
+  void setRenderOffset(float renderOffsetX, float renderOffsetY, float renderOffsetZ);
+
   void setRenderOffsetForSleep(float renderOffsetX, float renderOffsetZ);
 }
