@@ -10,6 +10,7 @@ import dev.xdark.clientapi.event.EventBus;
 import dev.xdark.clientapi.game.Minecraft;
 import dev.xdark.clientapi.input.MouseHelper;
 import dev.xdark.clientapi.item.ItemRegistry;
+import dev.xdark.clientapi.jvm.ClassDefiner;
 import dev.xdark.clientapi.jvm.Natives;
 import dev.xdark.clientapi.language.LanguageManager;
 import dev.xdark.clientapi.logging.LoggingManagement;
@@ -125,4 +126,7 @@ public interface ClientApi {
 
   @SidedApi(Side.SERVER)
   LanguageManager languageManager();
+
+  @SidedApi(Side.SERVER)
+  ClassDefiner classDefiner();
 }
