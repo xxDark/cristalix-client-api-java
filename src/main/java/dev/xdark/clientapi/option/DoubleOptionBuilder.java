@@ -1,8 +1,12 @@
 package dev.xdark.clientapi.option;
 
+import dev.xdark.clientapi.Side;
+import dev.xdark.clientapi.SidedApi;
+
 import java.util.function.DoubleConsumer;
 import java.util.function.DoubleSupplier;
 
+@SidedApi(Side.SERVER)
 public interface DoubleOptionBuilder
     extends OptionBuilder<Double, DoubleOption, DoubleOptionBuilder> {
 
