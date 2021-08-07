@@ -29,4 +29,10 @@ public interface EntityPlayerSP extends AbstractClientPlayer {
 
   @SidedApi(Side.SERVER)
   void closeScreen();
+
+  @Override
+  float getHealth();
+
+  @Override
+  float getMaxHealth();
 }

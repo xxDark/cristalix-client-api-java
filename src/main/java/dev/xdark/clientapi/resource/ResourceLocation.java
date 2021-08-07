@@ -11,6 +11,10 @@ public interface ResourceLocation {
     throw CompileStub.create();
   }
 
+  static ResourceLocation of(String input) {
+    throw CompileStub.create();
+  }
+
   String getNamespace();
 
   String getPath();

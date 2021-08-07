@@ -57,8 +57,6 @@ public interface EntityPlayer extends EntityLivingBase {
 
   int xpBarCap();
 
-  //FoodStats getFoodStats();
-
   boolean canEat(boolean force);
 
   boolean shouldHeal();
@@ -127,7 +125,9 @@ public interface EntityPlayer extends EntityLivingBase {
 
   FoodStats getFoodStats();
 
+  @SidedApi(Side.SERVER)
   void setRenderOffset(float renderOffsetX, float renderOffsetY, float renderOffsetZ);
 
+  @SidedApi(Side.SERVER)
   void setRenderOffsetForSleep(float renderOffsetX, float renderOffsetZ);
 }

@@ -28,9 +28,9 @@ public final class HelloMod implements ModMain, Listener {
 
   @Override
   public void load(ClientApi api) {
-    api.eventBus().register(this, ServerConnect.class, e -> {
-      api.chat().printChatMessage(Text.of("Hello, World!", TextFormatting.GOLD));
-    }, 100);
+  	ServerConnect.BUS.register(this, e -> {
+  	  api.chat().printChatMessage(Text.of("Hello, World!", TextFormatting.GOLD));
+  	}, 100);
   }
 
   @Override

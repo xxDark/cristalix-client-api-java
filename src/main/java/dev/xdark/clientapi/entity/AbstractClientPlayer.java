@@ -5,13 +5,14 @@ import dev.xdark.clientapi.SidedApi;
 import dev.xdark.clientapi.network.NetworkPlayerInfo;
 import dev.xdark.clientapi.resource.ResourceLocation;
 
-@SidedApi(Side.SERVER)
+@SidedApi(Side.BOTH)
 public interface AbstractClientPlayer extends EntityPlayer {
 
   boolean hasPlayerInfo();
 
   NetworkPlayerInfo getPlayerInfo();
 
+  @SidedApi(Side.SERVER)
   void setPlayerInfo(NetworkPlayerInfo playerInfo);
 
   boolean hasSkin();
@@ -24,6 +25,7 @@ public interface AbstractClientPlayer extends EntityPlayer {
 
   String getSkinType();
 
+  @SidedApi(Side.SERVER)
   float getFovModifier();
 
   boolean hasElytraCape();

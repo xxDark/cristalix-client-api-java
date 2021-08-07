@@ -3,6 +3,7 @@ package dev.xdark.clientapi.settings;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 
+@Deprecated
 @SidedApi(Side.BOTH)
 public interface SettingsManager {
 

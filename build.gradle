@@ -16,12 +16,13 @@ dependencies {
     compileOnly 'org.lwjgl.lwjgl:lwjgl:2.9.3'
     compileOnly 'org.lwjgl.lwjgl:lwjgl_util:2.9.3'
     compileOnly 'com.mojang:authlib:2.1.28'
-    compileOnly 'io.netty:netty-buffer:4.1.58.Final'
-    compileOnly 'dev.xdark:feder:1.0-SNAPSHOT'
+    compileOnly 'io.netty:netty-buffer:4.1.66.Final'
+    compileOnly 'dev.xdark:feder:live-SNAPSHOT'
     compileOnly 'com.google.guava:guava:21.0'
     compileOnly 'org.apache.logging.log4j:log4j-api:2.8.1'
     compileOnly 'org.apache.logging.log4j:log4j-core:2.8.1'
     compileOnly 'it.unimi.dsi:fastutil:8.3.1'
+    compileOnly 'com.google.code.gson:gson:2.8.7'
 }
 
 compileJava {
