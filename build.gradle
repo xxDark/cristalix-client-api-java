@@ -23,6 +23,7 @@ dependencies {
     compileOnly 'org.apache.logging.log4j:log4j-core:2.8.1'
     compileOnly 'it.unimi.dsi:fastutil:8.3.1'
     compileOnly 'com.google.code.gson:gson:2.8.7'
+    compileOnly 'dev.xdark:optlibrary:1.0.5'
 }
 
 compileJava {
