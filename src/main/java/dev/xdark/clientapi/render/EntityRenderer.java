@@ -2,7 +2,9 @@ package dev.xdark.clientapi.render;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.entity.EntityLivingBase;
 import dev.xdark.clientapi.renderer.culling.Camera;
+import dev.xdark.clientapi.resource.ResourceLocation;
 
 @SidedApi(Side.SERVER)
 public interface EntityRenderer {
@@ -37,4 +39,18 @@ public interface EntityRenderer {
       boolean isSneaking);
 
   Camera getCamera();
+
+  boolean loadShader(ResourceLocation location);
+
+  boolean setFxaaShader(int shader);
+
+  float getNightVisionBrightness(EntityLivingBase entity, float partialTicks);
+
+  void setupOverlayRendering();
+
+  boolean isShaderActive();
+
+  void stopUseShader();
+
+  void switchUseShader();
 }

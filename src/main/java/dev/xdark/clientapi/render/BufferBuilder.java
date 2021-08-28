@@ -3,6 +3,8 @@ package dev.xdark.clientapi.render;
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
 
+import java.nio.ByteBuffer;
+
 @SidedApi(Side.BOTH)
 public interface BufferBuilder {
 
@@ -53,4 +55,30 @@ public interface BufferBuilder {
   void putColor4(int argb);
 
   void putColorRGB_F4(float red, float green, float blue);
+
+  int getNextIndex();
+
+  int getBufferSize();
+
+  @SidedApi(Side.SERVER)
+  ByteBuffer getBufferData();
+
+  @SidedApi(Side.SERVER)
+  void putBulkData(ByteBuffer buffer);
+
+  @SidedApi(Side.SERVER)
+  State getState();
+
+  @SidedApi(Side.SERVER)
+  void setState(State state);
+
+  @SidedApi(Side.SERVER)
+  interface State {
+
+    int[] getRawBuffer();
+
+    int getVertexCount();
+
+    VertexFormat getVertexFormat();
+  }
 }

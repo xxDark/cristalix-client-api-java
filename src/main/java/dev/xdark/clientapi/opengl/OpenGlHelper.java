@@ -255,12 +255,4 @@ public final class OpenGlHelper {
   public static String getCpu() {
     throw CompileStub.create();
   }
-
-  @SidedApi(Side.SERVER)
-  public interface FboMode {
-
-    FboMode BASE = objectValue(),
-        ARB = objectValue(),
-        EXT = objectValue();
-  }
 }
