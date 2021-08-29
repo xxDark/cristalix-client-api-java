@@ -6,5 +6,9 @@ import dev.xdark.clientapi.SidedApi;
 @SidedApi(Side.SERVER)
 public interface IngameUI {
 
+  ChatOverlay getDefaultChatOverlay();
+
   ChatOverlay getChatOverlay();
+
+  void setChatOverlay(ChatOverlay chatOverlay);
 }
