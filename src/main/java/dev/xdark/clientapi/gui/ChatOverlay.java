@@ -50,6 +50,10 @@ public interface ChatOverlay extends UIComponent {
   @SidedApi(Side.SERVER)
   interface Builder {
 
+    static Builder builder() {
+      throw CompileStub.create();
+    }
+
     Builder minecraft(Minecraft mc);
 
     Builder width(int width);
