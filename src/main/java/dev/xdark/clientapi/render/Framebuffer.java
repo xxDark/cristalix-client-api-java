@@ -2,9 +2,14 @@ package dev.xdark.clientapi.render;
 
 import dev.xdark.clientapi.Side;
 import dev.xdark.clientapi.SidedApi;
+import dev.xdark.clientapi.util.CompileStub;
 
 @SidedApi(Side.SERVER)
 public interface Framebuffer {
+
+  static Framebuffer create(int width, int height, boolean useDepth, Tessellator tessellator) {
+    throw CompileStub.create();
+  }
 
   void createBindFramebuffer(int width, int height);
 
