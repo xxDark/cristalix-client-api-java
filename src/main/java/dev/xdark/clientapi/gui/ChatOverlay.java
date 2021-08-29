@@ -39,6 +39,8 @@ public interface ChatOverlay extends UIComponent {
 
   List<String> getSentMessages();
 
+  int getHistoryLimit();
+
   void setWidth(int width);
 
   void setFocusedHeight(int focusedHeight);
@@ -46,6 +48,8 @@ public interface ChatOverlay extends UIComponent {
   void setUnfocusedHeight(int unfocusedHeight);
 
   void setScale(float scale);
+
+  void setHistoryLimit(int historyLimit);
 
   @SidedApi(Side.SERVER)
   interface Builder {
@@ -63,6 +67,8 @@ public interface ChatOverlay extends UIComponent {
     Builder unfocusedHeight(int unfocusedHeight);
 
     Builder scale(float scale);
+
+    Builder historyLimit(int historyLimit);
 
     ChatOverlay build();
   }
