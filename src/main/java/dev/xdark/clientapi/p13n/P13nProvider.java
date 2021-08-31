@@ -18,4 +18,6 @@ public interface P13nProvider {
   boolean playEmotion(EntityPlayer player, UUID emotion, String data, boolean override);
 
   boolean stopEmotion(EntityPlayer player, UUID emotion);
+
+  void tickEmotion(EntityPlayer player);
 }
