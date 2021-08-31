@@ -17,6 +17,7 @@ import dev.xdark.clientapi.logging.LoggingManagement;
 import dev.xdark.clientapi.math.MathProvider;
 import dev.xdark.clientapi.nbt.NBTProvider;
 import dev.xdark.clientapi.network.ClientConnection;
+import dev.xdark.clientapi.p13n.P13nProvider;
 import dev.xdark.clientapi.potion.PotionRegistry;
 import dev.xdark.clientapi.render.*;
 import dev.xdark.clientapi.renderer.block.model.ModelManager;
@@ -129,4 +130,7 @@ public interface ClientApi {
 
   @SidedApi(Side.SERVER)
   ClassDefiner classDefiner();
+
+  @SidedApi(Side.SERVER)
+  P13nProvider p13nProvider();
 }
